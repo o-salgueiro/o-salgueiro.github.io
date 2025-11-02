@@ -6,62 +6,14 @@
   <title data-i18n="site.title">Club O Salgueiro – Tenis</title>
   <meta name="description" content="Sociedade Deportiva O'Salgueiro: club familiar para practicar tenis, pádel e natación nunha contorna natural única.">
   <meta name="theme-color" content="#0b8457">
-  <style>
-    :root{ --primary:#0b8457; --bg:#0b845710; --text:#1b1b1b; --muted:#5b5b5b; --ring:rgba(11,132,87,.25) }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Helvetica,Arial,sans-serif;color:var(--text);background:#fafafa}
-    a{color:inherit}
-    .container{max-width:1100px;margin:0 auto;padding:0 1rem}
-    header{position:sticky;top:0;z-index:50;background:#ffffffea;backdrop-filter:blur(6px);border-bottom:1px solid #eee}
-    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-    .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
-    .logo{width:36px;height:36px;border-radius:50%;background:var(--primary);display:grid;place-items:center;color:#fff;font-weight:800}
-    nav ul{display:flex;gap:.75rem;list-style:none;margin:0;padding:0;align-items:center}
-    nav a{padding:.5rem .6rem;border-radius:.6rem;text-decoration:none}
-    nav a:hover{background:#0001}
-    nav a.active{border-bottom:2px solid var(--primary); background:#0001}
-    .lang button{border:1px solid #ddd;background:#fff;padding:.35rem .55rem;border-radius:.5rem;cursor:pointer}
-    .lang button.active{border-color:var(--primary);box-shadow:0 0 0 3px var(--ring)}
-    .hero{position:relative;overflow:hidden}
-    .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding:2rem 0 3rem}
-    .hero h1{font-size:clamp(1.8rem,2.6vw,3rem);line-height:1.1;margin:.2rem 0}
-    .hero p{color:var(--muted);font-size:1.1rem}
-    .hero-photo img{width:100%;max-height:520px;object-fit:cover;border-radius:1rem;border:1px solid #eee}
-    .carousel{position:relative}
-    .carousel img{display:none}
-    .carousel img.active{display:block}
-    .cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem}
-    .btn{background:var(--primary);color:#fff;padding:.8rem 1rem;border:none;border-radius:.8rem;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem}
-    .btn.secondary{background:#e7f6ef;color:var(--primary);border:1px solid #cfeede}
-    .card{background:#fff;border:1px solid #eee;border-radius:1rem;padding:1.25rem;box-shadow:0 6px 18px rgba(0,0,0,.04)}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
-    @media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.grid-3,.grid-2{grid-template-columns:1fr}}
-    section{padding:3rem 0}
-    h2{font-size:1.6rem;margin:.2rem 0 1rem}
-    .tag{display:inline-block;background:#f2faf6;color:var(--primary);border:1px solid #dff2e8;padding:.2rem .55rem;border-radius:999px;font-size:.85rem}
-    .feature{display:flex;gap:.9rem}
-    .feature-icon{width:40px;height:40px;border-radius:.7rem;background:#e7f6ef;display:grid;place-items:center;color:var(--primary);font-weight:800}
-    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem}
-    .gallery img{width:100%;height:180px;object-fit:cover;border-radius:.6rem;border:1px solid #eee;cursor:pointer}
-    @media (max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
-    footer{background:#0e0f0f;color:#e9f4ef;margin-top:2rem}
-    footer a{color:#e9f4ef}
-    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem}
-    @media (max-width:900px){.footer-grid{grid-template-columns:1fr}}
-    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:1000}
-    .lightbox img{max-width:95vw;max-height:95vh;object-fit:contain;border-radius:.5rem;border:1px solid #333}
-    .lightbox.show{display:flex}
-    .lightbox-close{position:fixed;top:12px;right:16px;font-size:32px;line-height:1;border:none;background:transparent;color:#fff;cursor:pointer}
-    .hidden{display:none}
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
   <div class="container nav">
     <a href="#inicio" class="brand" aria-label="Inicio – Club O Salgueiro">
       <span class="logo" aria-hidden="true">🎾</span>
-      <span class="brand-text">Sociedad Deportiva O Salgueiro</span>
+      <span class="brand-text" data-i18n="site.brand">Sociedad Deportiva O Salgueiro</span>
     </a>
     <nav aria-label="principal">
       <ul>
@@ -117,9 +69,9 @@
   <div class="container" id="club-desc" style="margin-top: -1rem;">
     <div class="card">
       <h2 data-i18n="club.title">Sociedade Deportiva O'Salgueiro</h2>
-      <p data-i18n="club.p1">A Sociedade Deportiva O'Salgueiro é un club deportivo de carácter familiar con estupendas instalacións para a práctica do tenis, pádel e natación, actividades que poden realizar persoas de todas as idades e é unha maneira de facer deporte e tamén divertirse.</p>
-      <p data-i18n="club.p2">Sitúase nunha paisaxe de beleza singular e con integración en plena natureza, o que fai que a práctica de deporte sexa máis placenteira.</p>
-      <p data-i18n="club.p3">Vén e coñece o Club da Sociedade Deportiva O'Salgueiro, onde poderás gozar do teu deporte favorito.</p>
+      <p data-i18n="club.p1">A Sociedade Deportiva O'Salgueiro é un club deportivo de carácter familiar...</p>
+      <p data-i18n="club.p2">Sitúase nunha paisaxe de beleza singular...</p>
+      <p data-i18n="club.p3">Vén e coñece o Club da Sociedade Deportiva O'Salgueiro...</p>
     </div>
   </div>
 </main>
@@ -131,18 +83,18 @@
       <div class="card">
         <div class="feature"><div class="feature-icon">🏟️</div>
           <div><h3 data-i18n="tennis.facilities.title">Pistas e instalacións</h3>
-          <p data-i18n="tennis.facilities.text">Pistas de tenis con iluminación e vestiarios. Entorno natural e tranquilo para xogar todo o ano.</p></div>
+          <p data-i18n="tennis.facilities.text">Pistas de tenis con iluminación e vestiarios...</p></div>
         </div>
       </div>
       <div class="card">
         <div class="feature"><div class="feature-icon">👨‍🏫</div>
           <div><h3 data-i18n="tennis.coaches.title">Adestradores titulados</h3>
-          <p data-i18n="tennis.coaches.text">Equipo con experiencia en formación base e alto rendemento.</p></div>
+          <p data-i18n="tennis.coaches.text">Equipo con experiencia...</p></div>
         </div>
       </div>
     </div>
     <div class="notice" style="margin-top:1rem">
-      <strong data-i18n="tennis.notice.title">Proba gratis</strong> — <span data-i18n="tennis.notice.text">primeira clase de proba sen custo. Escríbenos para reservar praza.</span>
+      <strong data-i18n="tennis.notice.title">Proba gratis</strong> — <span data-i18n="tennis.notice.text">primeira clase...</span>
     </div>
     <h3 style="margin-top:2rem">Galería</h3>
     <div class="gallery" id="gallery">
@@ -158,9 +110,9 @@
   <div class="container">
     <h2 data-i18n="activities.title">Outras actividades</h2>
     <div class="grid-3">
-      <div class="card"><h3 data-i18n="activities.padel.title">Pádel</h3><p data-i18n="activities.padel.text">Pistas dobres, clases e quedadas semanais.</p></div>
-      <div class="card"><h3 data-i18n="activities.pool.title">Piscina</h3><p data-i18n="activities.pool.text">Piscina ao aire libre en ampla zona verde para a tempada de verán.</p></div>
-      <div class="card"><h3 data-i18n="activities.social.title">Actividades sociais</h3><p data-i18n="activities.social.text">Ligas internas de tenis, encontros familiares e eventos do clube.</p></div>
+      <div class="card"><h3 data-i18n="activities.padel.title">Pádel</h3><p data-i18n="activities.padel.text">Pistas dobres...</p></div>
+      <div class="card"><h3 data-i18n="activities.pool.title">Piscina</h3><p data-i18n="activities.pool.text">Piscina ao aire libre...</p></div>
+      <div class="card"><h3 data-i18n="activities.social.title">Actividades sociais</h3><p data-i18n="activities.social.text">Ligas internas...</p></div>
     </div>
   </div>
 </section>
@@ -171,15 +123,15 @@
     <div class="grid-2">
       <div class="card">
         <h3 data-i18n="history.lead1">A nosa historia</h3>
-        <p data-i18n="history.p1">A orixe da Sociedade Deportiva O'Salgueiro remóntase a unha reunión dun grupo de amigos que atesouraban o xérmolo do tenis e que en 1975 se lanzaron á aventura de mercar uns terreos para construír "a pista de tenis"; case todos eles seguen na práctica do tenis e continúan como socios do Club.</p>
-        <p data-i18n="history.p2">Aquela pista do principio da historia converteuse nun conxunto de instalacións que enriqueceron as prestacións da Sociedade Deportiva cara aos seus socios.</p>
+        <p data-i18n="history.p1">A orixe da Sociedade...</p>
+        <p data-i18n="history.p2">Aquela pista do principio...</p>
       </div>
       <div class="card"><img src="assets/foto_historia01.jpg" alt="Historia 1" style="width:100%;border-radius:.6rem;border:1px solid #eee"></div>
     </div>
     <div class="grid-2" style="margin-top:1rem">
       <div class="card">
-        <p data-i18n="history.p3">O'Salgueiro mantivo ao longo de todos estes anos unha referencia de gran tradición no mundo do tenis galego.</p>
-        <p data-i18n="history.p4">Entre os seus socios atópanse desde hai anos e na actualidade campións galegos, campións de España e campións de Europa en diversas categorías de veteranos, tanto na modalidade de individuais como en dobres.</p>
+        <p data-i18n="history.p3">O'Salgueiro mantivo...</p>
+        <p data-i18n="history.p4">Entre os seus socios...</p>
       </div>
       <div class="card"><img src="assets/foto_historia02.jpg" alt="Historia 2" style="width:100%;border-radius:.6rem;border:1px solid #eee"></div>
     </div>
@@ -190,18 +142,18 @@
   <div class="container">
     <h2 data-i18n="fac.title">Instalacións</h2>
     <div class="grid-3">
-      <div class="card"><p data-i18n="fac.p1">Tres pistas de tenis quick, dúas delas con iluminación artificial.</p></div>
-      <div class="card"><p data-i18n="fac.p2">Pista de pádel de herba sintética con iluminación artificial.</p></div>
-      <div class="card"><p data-i18n="fac.p3">Campo de fútbol 7 de herba natural.</p></div>
-      <div class="card"><p data-i18n="fac.p4">Magnífica piscina de 12 x 6 m. dotada das últimas tecnoloxías e con solario de herba natural.</p></div>
-      <div class="card"><p data-i18n="fac.p5">Pérgola con capacidade para 25 persoas e tres grellas á disposición dos socios.</p></div>
+      <div class="card"><p data-i18n="fac.p1">Tres pistas...</p></div>
+      <div class="card"><p data-i18n="fac.p2">Pista de pádel...</p></div>
+      <div class="card"><p data-i18n="fac.p3">Campo de fútbol 7...</p></div>
+      <div class="card"><p data-i18n="fac.p4">Magnífica piscina...</p></div>
+      <div class="card"><p data-i18n="fac.p5">Pérgola con capacidade...</p></div>
     </div>
     <h3>Casa Club</h3>
     <ul>
       <li data-i18n="fac.gym">Ximnasio.</li>
       <li data-i18n="fac.sauna">Sauna.</li>
-      <li data-i18n="fac.lockers">Vestiarios femininos e masculinos.</li>
-      <li data-i18n="fac.lounge">Salón de TV e xogos de mesa.</li>
+      <li data-i18n="fac.lockers">Vestiarios...</li>
+      <li data-i18n="fac.lounge">Salón de TV...</li>
       <li data-i18n="fac.pingpong">Tenis de mesa.</li>
       <li data-i18n="fac.billiards">Mesa de billar francés.</li>
     </ul>
@@ -221,9 +173,9 @@
   <div class="container">
     <h2 data-i18n="news.title">Novas</h2>
     <div class="grid-3" id="news-list">
-      <article class="card"><h3 data-i18n="news.item1.title">Liga interna 2026</h3><p data-i18n="news.item1.text">Aberta a inscrición para a nova tempada. Categorías por niveis.</p></article>
-      <article class="card"><h3 data-i18n="news.item2.title">Campamento de verán</h3><p data-i18n="news.item2.text">Escola intensiva para nenos e nenas en xullo e agosto.</p></article>
-      <article class="card"><h3 data-i18n="news.item3.title">Clínic con xogadores locais</h3><p data-i18n="news.item3.text">Sesión especial con adestradores convidados.</p></article>
+      <article class="card"><h3 data-i18n="news.item1.title">Liga interna 2026</h3><p data-i18n="news.item1.text">Aberta a inscrición...</p></article>
+      <article class="card"><h3 data-i18n="news.item2.title">Campamento de verán</h3><p data-i18n="news.item2.text">Escola intensiva...</p></article>
+      <article class="card"><h3 data-i18n="news.item3.title">Clínic con xogadores locais</h3><p data-i18n="news.item3.text">Sesión especial...</p></article>
     </div>
   </div>
 </section>
@@ -232,11 +184,11 @@
   <div class="container">
     <h2 data-i18n="fees.title">Tarifas</h2>
     <div class="grid-3">
-      <div class="card"><h3 data-i18n="fees.membership.title">Cota de socio/a</h3><p><strong>25€</strong> / mes</p><p data-i18n="fees.membership.text">Acceso ao clube, descontos en clases e reservas preferentes.</p></div>
-      <div class="card"><h3 data-i18n="fees.group.title">Clases en grupo</h3><p><strong>15€</strong> / sesión</p><p data-i18n="fees.group.text">Grupos reducidos de 4-6 persoas.</p></div>
-      <div class="card"><h3 data-i18n="fees.private.title">Clases individuais</h3><p><strong>30€</strong> / sesión</p><p data-i18n="fees.private.text">Programa personalizado por obxectivos.</p></div>
+      <div class="card"><h3 data-i18n="fees.membership.title">Cota de socio/a</h3><p><strong>25€</strong> / mes</p><p data-i18n="fees.membership.text">Acceso ao clube...</p></div>
+      <div class="card"><h3 data-i18n="fees.group.title">Clases en grupo</h3><p><strong>15€</strong> / sesión</p><p data-i18n="fees.group.text">Grupos reducidos...</p></div>
+      <div class="card"><h3 data-i18n="fees.private.title">Clases individuais</h3><p><strong>30€</strong> / sesión</p><p data-i18n="fees.private.text">Programa personalizado...</p></div>
     </div>
-    <p style="margin-top:1rem;color:var(--muted)" data-i18n="fees.disclaimer">* Prezos orientativos. Consultar dispoñibilidade e bonos.</p>
+    <p style="margin-top:1rem;color:var(--muted)" data-i18n="fees.disclaimer">* Prezos orientativos...</p>
   </div>
 </section>
 
@@ -264,7 +216,7 @@
       <div class="card">
         <h3 data-i18n="contact.where">Onde estamos</h3>
         <p><strong>Sociedade Deportiva O'Salgueiro</strong><br>Lg. de Barreiros, s/n · 15314 Paderne (A Coruña)</p>
-        <p><a href="https://www.google.com/maps/dir/''/CLUB+OSALGUEIRO+Lugar+de+Barreiros,+s%2Fn+15314+Paderne+A+Coru%C3%B1a/@43.2918118,-8.1715297,641m/data=!3m1!1e3!4m13!4m12!1m5!1m1!1s0xd2e6dbe4c827ead:0xab25a5ef1b08b6cc!2m2!1d-8.1715297!2d43.2918118!1m5!1m1!1s0xd2e6dbe4c827ead:0xab25a5ef1b08b6cc!2m2!1d-8.1715297!2d43.2918118?entry=ttu" target="_blank" rel="noopener" data-i18n="contact.map">Ver en Google Maps</a></p>
+        <p><a href="https://www.google.com/maps/dir/''/CLUB+OSALGUEIRO+Lugar+de+Barreiros,+s%2Fn+15314+Paderne+A+Coruña/@43.2918118,-8.1715297,641m/data=!3m1!1e3!4m13!4m12!1m5!1m1!1s0xd2e6dbe4c827ead:0xab25a5ef1b08b6cc!2m2!1d-8.1715297!2d43.2918118!1m5!1m1!1s0xd2e6dbe4c827ead:0xab25a5ef1b08b6cc!2m2!1d-8.1715297!2d43.2918118?entry=ttu" target="_blank" rel="noopener" data-i18n="contact.map">Ver en Google Maps</a></p>
         <p data-i18n="contact.extra">A 4 km de Betanzos · Horario 24 horas</p>
       </div>
     </div>
@@ -287,7 +239,7 @@
     <div class="footer-grid">
       <div>
         <h3 style="margin-top:0" data-i18n="footer.about.title">Sobre o clube</h3>
-        <p data-i18n="footer.about.text">A Sociedade Deportiva O'Salgueiro é un club familiar con instalacións para tenis, pádel e natación, nunha paisaxe de beleza singular e en plena natureza.</p>
+        <p data-i18n="footer.about.text">A Sociedade Deportiva O'Salgueiro é un club familiar...</p>
       </div>
       <div>
         <h3 data-i18n="footer.links.title">Ligazóns</h3>
@@ -319,192 +271,7 @@
   <img alt="ampliada">
 </div>
 
-<script>
-// ---------- i18n dictionary (completo) ----------
-const dict = {
-  gl: {
-    "site.title":"Club O Salgueiro – Tenis","site.brand":"Sociedad Deportiva O Salgueiro",
-    "nav.tennis":"Tenis","nav.activities":"Actividades","nav.history":"Historia","nav.facilities":"Instalacións","nav.news":"Novas","nav.fees":"Tarifas","nav.contact":"Contacto",
-    "hero.tag":"Tenis como actividade principal","hero.title":"O teu club de tenis en A Coruña","hero.subtitle":"Benvidos á Sociedade Deportiva O'Salgueiro: club familiar para practicar tenis, pádel e natación nunha contorna natural única.","hero.cta.tennis":"Ver tenis","hero.cta.contact":"Contactar",
-    "tennis.block.title":"Escola e grupos de tenis","tennis.block.text":"Clases para nenos, adultos e nivel competitivo. Grupos reducidos e horarios flexibles.","tennis.block.item1":"Iniciación, intermedio e avanzado","tennis.block.item2":"Clases individuais e colectivas","tennis.block.item3":"Ligas internas e torneos",
-    "tennis.title":"Tenis","tennis.facilities.title":"Pistas e instalacións","tennis.facilities.text":"Pistas de tenis con iluminación e vestiarios. Entorno natural e tranquilo para xogar todo o ano.","tennis.coaches.title":"Adestradores titulados","tennis.coaches.text":"Equipo con experiencia en formación base e alto rendemento.",
-    "tennis.notice.title":"Proba gratis","tennis.notice.text":"primeira clase de proba sen custo. Escríbenos para reservar praza.",
-    "activities.title":"Outras actividades","activities.padel.title":"Pádel","activities.padel.text":"Pistas dobres, clases e quedadas semanais.","activities.pool.title":"Piscina","activities.pool.text":"Piscina ao aire libre en ampla zona verde para a tempada de verán.","activities.social.title":"Actividades sociais","activities.social.text":"Ligas internas, encontros familiares e eventos do clube.",
-    "history.title":"A nosa historia","history.lead1":"A nosa historia","history.p1":"A orixe da Sociedade Deportiva O'Salgueiro foi unha reunión dun pequeno grupo de amigos que atesouraban o xermolo do tenis e que en 1975 se lanzaron á aventura de comprar uns terreos para construír 'a pista de tenis', case todos eles seguen na práctica do tenis e continúan como socios do Club.","history.p2":"Aquela 'pista' do principio da historia converteuse nun conxunto de instalacións que enriqueceron as prestacións da Sociedade Deportiva cara aos seus socios.","history.p3":"O'Salgueiro mantivo ao longo de todos estes anos unha referencia de gran tradición no mundo do tenis galego.","history.p4":"Entre os seus socios atópanse desde hai anos e na actualidade campións galegos de veteranos en distintas categorías e tanto na modalidade de individuais como en dobres.",
-    "fac.title":"Instalacións","fac.p1":"Tres pistas de tenis quick, dúas delas con iluminación artificial.","fac.p2":"Pista de pádel de herba sintética con iluminación artificial.","fac.p3":"Campo de fútbol 7 de herba natural.","fac.p4":"Magnífica piscina de 12 x 6 m. dotada das últimas tecnoloxías e con solario de herba natural.","fac.p5":"Pérgola con capacidade para 25 persoas e tres grellas á disposición dos socios.","fac.gym":"Ximnasio.","fac.sauna":"Sauna.","fac.lockers":"Vestiarios femininos e masculinos.","fac.lounge":"Salón de TV e xogos de mesa.","fac.pingpong":"Mesa de pimpón.","fac.billiards":"Mesa de billar francés.",
-    "news.title":"Novas","news.item1.title":"Liga interna 2026","news.item1.text":"Aberta a inscrición para a nova tempada. Categorías por niveis.","news.item2.title":"Campamento de verán","news.item2.text":"Escola intensiva para nenos e nenas en xullo e agosto.","news.item3.title":"Clínic con xogadores locais","news.item3.text":"Sesión especial con adestradores convidados.",
-    "fees.title":"Tarifas","fees.membership.title":"Cota de socio/a","fees.membership.text":"Acceso ao clube, descontos en clases e reservas preferentes.","fees.group.title":"Clases en grupo","fees.group.text":"Grupos reducidos de 4-6 persoas.","fees.private.title":"Clases individuais","fees.private.text":"Programa personalizado por obxectivos.","fees.disclaimer":"* Prezos orientativos. Consultar dispoñibilidade e bonos.",
-    "contact.title":"Contacto","contact.name":"Nome","contact.message":"Mensaxe","contact.send":"Enviar","contact.where":"Onde estamos","contact.map":"Ver en Google Maps","contact.extra":"A 4 km de Betanzos · Horario 24 horas",
-    "mailto.prompt": "Semella que non hai un cliente de correo predeterminado para "mailto:". Quere abrir Gmail para enviar a mensaxe?",
-    "footer.about.title":"Sobre o clube","footer.about.text":"A Sociedade Deportiva O'Salgueiro é un club familiar con instalacións para tenis, pádel e natación, nunha paisaxe de beleza singular e en plena natureza.","footer.links.title":"Ligazóns","footer.legal.title":"Legal","footer.legal.legal":"Aviso Legal","footer.legal.privacy":"Política de Privacidade","footer.legal.cookies":"Política de Cookies",
-    "club.title":"Sociedade Deportiva O'Salgueiro","club.p1":"A Sociedade Deportiva O'Salgueiro é un club deportivo de carácter familiar con estupendas instalacións para a práctica do tenis, pádel e natación, actividades que poden realizar persoas de todas as idades e é unha maneira de facer deporte e tamén divertirse.","club.p2":"Sitúase nunha paisaxe de beleza singular e con integración en plena natureza, o que fai que a práctica de deporte sexa máis placenteira.","club.p3":"Vén e coñece o Club da Sociedade Deportiva O'Salgueiro, onde poderás gozar do teu deporte favorito."
-  },
-  es: {
-    "site.title":"Club O Salgueiro – Tenis","site.brand":"Sociedad Deportiva O Salgueiro",
-    "nav.tennis":"Tenis","nav.activities":"Actividades","nav.history":"Historia","nav.facilities":"Instalaciones","nav.news":"Noticias","nav.fees":"Tarifas","nav.contact":"Contacto",
-    "hero.tag":"Tenis como actividad principal","hero.title":"Tu club de tenis en A Coruña","hero.subtitle":"Bienvenidos a la Sociedad Deportiva O'Salgueiro: club familiar para practicar tenis, pádel y natación en un entorno natural único.","hero.cta.tennis":"Ver tenis","hero.cta.contact":"Contactar",
-    "tennis.block.title":"Escuela y grupos de tenis","tennis.block.text":"Clases para niños, adultos y nivel competitivo. Grupos reducidos y horarios flexibles.","tennis.block.item1":"Iniciación, intermedio y avanzado","tennis.block.item2":"Clases individuales y colectivas","tennis.block.item3":"Ligas internas y torneos",
-    "tennis.title":"Tenis","tennis.facilities.title":"Pistas e instalaciones","tennis.facilities.text":"Pistas de tenis con iluminación y vestuarios. Entorno natural y tranquilo para jugar todo el año.","tennis.coaches.title":"Entrenadores titulados","tennis.coaches.text":"Equipo con experiencia en formación base y alto rendimiento.",
-    "tennis.notice.title":"Prueba gratis","tennis.notice.text":"primera clase de prueba sin coste. Escríbenos para reservar plaza.",
-    "activities.title":"Otras actividades","activities.padel.title":"Pádel","activities.padel.text":"Pistas dobles, clases y quedadas semanales.","activities.pool.title":"Piscina","activities.pool.text":"Piscina al aire libre en amplia zona verde para la temporada de verano.","activities.social.title":"Actividades sociales","activities.social.text":"Ligas internas, encuentros familiares y eventos del club.",
-    "history.title":"Nuestra historia","history.lead1":"Nuestra historia","history.p1":"El origen de la Sociedad Deportiva O'Salgueiro se remonta a una reunión de un grupo de amigos apasionados por el tenis que en 1975 se lanzaron a comprar unos terrenos para construir 'la pista de tenis'; casi todos ellos siguen practicando tenis y continúan como socios del Club.","history.p2":"Aquella 'pista' del principio se convirtió en un conjunto de instalaciones que enriquecieron los servicios de la Sociedad Deportiva hacia sus socios.","history.p3":"O'Salgueiro ha mantenido a lo largo de estos años una gran tradición en el mundo del tenis gallego.","history.p4":"Entre sus socios se encuentran desde hace años y en la actualidad campeones gallegos, campeones de España y campeones de Europa en diversas categorías de veteranos, tanto en individuales como en dobles.",
-    "fac.title":"Instalaciones","fac.p1":"Tres pistas de tenis quick, dos de ellas con iluminación artificial.","fac.p2":"Pista de pádel de hierba sintética con iluminación artificial.","fac.p3":"Campo de fútbol 7 de hierba natural.","fac.p4":"Magnífica piscina de 12 x 6 m dotada de las últimas tecnologías y con solárium de hierba natural.","fac.p5":"Pérgola con capacidad para 25 personas y tres parrillas a disposición de los socios.","fac.gym":"Gimnasio.","fac.sauna":"Sauna.","fac.lockers":"Vestuarios femeninos y masculinos.","fac.lounge":"Salón de TV y juegos de mesa.","fac.pingpong":"Mesa de pimpón.","fac.billiards":"Mesa de billar francés.",
-    "news.title":"Noticias","news.item1.title":"Liga interna 2026","news.item1.text":"Abierta la inscripción para la nueva temporada. Categorías por niveles.","news.item2.title":"Campamento de verano","news.item2.text":"Escuela intensiva para niños y niñas en julio y agosto.","news.item3.title":"Clínic con jugadores locales","news.item3.text":"Sesión especial con entrenadores invitados.",
-    "fees.title":"Tarifas","fees.membership.title":"Cuota de socio/a","fees.membership.text":"Acceso al club, descuentos en clases y reservas preferentes.","fees.group.title":"Clases en grupo","fees.group.text":"Grupos reducidos de 4–6 personas.","fees.private.title":"Clases individuales","fees.private.text":"Programa personalizado por objetivos.","fees.disclaimer":"* Precios orientativos. Consultar disponibilidad y bonos.",
-    "contact.title":"Contacto","contact.name":"Nombre","contact.message":"Mensaje","contact.send":"Enviar","contact.where":"Dónde estamos","contact.map":"Ver en Google Maps","contact.extra":"A 4 km de Betanzos · Horario 24 horas",
-    "mailto.prompt": "Parece que no hay una aplicación de correo predeterminada para "mailto:". ¿Quieres abrir Gmail para enviar el mensaje?",
-    "footer.about.title":"Sobre el club","footer.about.text":"La Sociedad Deportiva O'Salgueiro es un club familiar con instalaciones para tenis, pádel y natación, en un paisaje de gran belleza y plena naturaleza.","footer.links.title":"Enlaces","footer.legal.title":"Legal","footer.legal.legal":"Aviso Legal","footer.legal.privacy":"Política de Privacidad","footer.legal.cookies":"Política de Cookies",
-    "club.title":"Sociedad Deportiva O'Salgueiro","club.p1":"La Sociedad Deportiva O'Salgueiro es un club deportivo de carácter familiar con estupendas instalaciones para la práctica del tenis, pádel y natación, actividades que pueden realizar personas de todas las edades y que son una manera de hacer deporte y también divertirse.","club.p2":"Se sitúa en un paisaje de gran belleza e integrada en plena naturaleza, lo que hace que la práctica del deporte sea más placentera.","club.p3":"Ven y conoce el Club de la Sociedad Deportiva O'Salgueiro, donde podrás disfrutar de tu deporte favorito."
-  },
-  en: {
-    "site.title":"Club O Salgueiro – Tennis","site.brand":"Sociedad Deportiva O Salgueiro",
-    "nav.tennis":"Tennis","nav.activities":"Activities","nav.history":"History","nav.facilities":"Facilities","nav.news":"News","nav.fees":"Fees","nav.contact":"Contact",
-    "hero.tag":"Tennis as our main activity","hero.title":"Your tennis club in A Coruña","hero.subtitle":"Welcome to Sociedad Deportiva O'Salgueiro: a family-friendly club for tennis, padel and swimming in a unique natural setting.","hero.cta.tennis":"See tennis","hero.cta.contact":"Contact",
-    "tennis.block.title":"Tennis school & groups","tennis.block.text":"Classes for kids, adults and competitive level. Small groups and flexible schedules.","tennis.block.item1":"Beginner, intermediate & advanced","tennis.block.item2":"Private and group lessons","tennis.block.item3":"In-house leagues and tournaments",
-    "tennis.title":"Tennis","tennis.facilities.title":"Courts & facilities","tennis.facilities.text":"Tennis courts with lighting and locker rooms. Quiet natural setting to play all year round.","tennis.coaches.title":"Certified coaches","tennis.coaches.text":"Team with experience in grassroots and high-performance training.",
-    "tennis.notice.title":"Free trial","tennis.notice.text":"first trial lesson at no cost. Message us to book.",
-    "activities.title":"Other activities","activities.padel.title":"Padel","activities.padel.text":"Double courts, lessons and weekly meetups.","activities.pool.title":"Pool","activities.pool.text":"Outdoor pool in a large green area for the summer season.","activities.social.title":"Social events","activities.social.text":"In-house leagues, family gatherings and club events.",
-    "history.title":"Our history","history.lead1":"Our history","history.p1":"The origins of Sociedad Deportiva O'Salgueiro trace back to a small group of friends passionate about tennis who, in 1975, bought land to build 'the tennis court'. Many of them still play and remain club members today.","history.p2":"That first 'court' grew into a set of facilities that enhanced the services offered to our members.","history.p3":"Over the years, O'Salgueiro has been a well-known reference in Galician tennis.","history.p4":"Among our members there have long been and still are Galician veterans champions in different categories, both in singles and doubles.",
-    "fac.title":"Facilities","fac.p1":"Three quick tennis courts, two with floodlights.","fac.p2":"Synthetic-grass padel court with floodlights.","fac.p3":"7-a-side football pitch with natural grass.","fac.p4":"Superb 12×6 m pool with the latest technology and a natural-grass solarium.","fac.p5":"Pergola for 25 people and three barbecues for members to use.","fac.gym":"Gym.","fac.sauna":"Sauna.","fac.lockers":"Women’s and men’s locker rooms.","fac.lounge":"TV lounge and board games.","fac.pingpong":"Table tennis.","fac.billiards":"French billiards table.",
-    "news.title":"News","news.item1.title":"In-house league 2026","news.item1.text":"Registration open for the new season. Skill-based categories.","news.item2.title":"Summer camp","news.item2.text":"Intensive kids program in July and August.","news.item3.title":"Clinic with local players","news.item3.text":"Special session with guest coaches.",
-    "fees.title":"Fees","fees.membership.title":"Membership","fees.membership.text":"Club access, lesson discounts and priority bookings.","fees.group.title":"Group lessons","fees.group.text":"Small groups of 4–6 people.","fees.private.title":"Private lessons","fees.private.text":"Goal-based personalised program.","fees.disclaimer":"* Indicative prices. Check availability and packs.",
-    "contact.title":"Contact","contact.name":"Name","contact.message":"Message","contact.send":"Send","contact.where":"Where we are","contact.map":"View on Google Maps","contact.extra":"4 km from Betanzos · Open 24h",
-    "mailto.prompt": "It seems there is no default mail app for "mailto:". Do you want to open Gmail to send the message?",
-    "footer.about.title":"About the club","footer.about.text":"Sociedad Deportiva O'Salgueiro is a family-friendly club with tennis, padel and swimming facilities, set in beautiful natural surroundings.","footer.links.title":"Links","footer.legal.title":"Legal","footer.legal.legal":"Legal Notice","footer.legal.privacy":"Privacy Policy","footer.legal.cookies":"Cookie Policy",
-    "club.title":"Sociedad Deportiva O'Salgueiro","club.p1":"Sociedad Deportiva O'Salgueiro is a family-friendly sports club with excellent facilities for tennis, padel and swimming — activities for all ages and a way to keep fit while having fun.","club.p2":"It is set in beautiful surroundings and fully integrated with nature, making sports practice even more enjoyable.","club.p3":"Come and discover the Sociedad Deportiva O'Salgueiro Club, where you can enjoy your favourite sport."
-  }
-};
-
-function applyLang(lang){
-  const strings = dict[lang] || dict.gl;
-  document.documentElement.lang = lang;
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (strings[key]) el.textContent = strings[key];
-  });
-  document.title = strings['site.title'] || document.title;
-  document.querySelectorAll('.lang button').forEach(btn => {
-    const active = btn.getAttribute('data-lang') === lang;
-    btn.classList.toggle('active', active);
-    btn.setAttribute('aria-pressed', active ? 'true' : 'false');
-  });
-  try { localStorage.setItem('lang', lang); } catch(e){}
-}
-
-function initLang(){
-  // First visit in Spanish; otherwise respect stored language
-  const stored = localStorage.getItem('lang');
-  const lang = (stored && ['gl','es','en'].includes(stored)) ? stored : 'es';
-  applyLang(lang);
-}
-document.addEventListener('DOMContentLoaded', ()=>{
-  initLang();
-  document.querySelectorAll('.lang button').forEach(btn => {
-    btn.addEventListener('click', ()=>applyLang(btn.getAttribute('data-lang')));
-  });
-});
-
-// Hero carousel (5s)
-document.addEventListener('DOMContentLoaded', ()=>{
-  const imgs = Array.from(document.querySelectorAll('#hero-carousel img'));
-  if (!imgs.length) return;
-  let i = 0;
-  imgs.forEach((im, idx)=> im.classList.toggle('active', idx===0));
-  setInterval(()=>{
-    imgs[i].classList.remove('active');
-    i = (i + 1) % imgs.length;
-    imgs[i].classList.add('active');
-  }, 5000);
-});
-
-// Lightbox (Inicio + Instalacións)
-document.addEventListener('DOMContentLoaded', ()=>{
-  const lb=document.getElementById('lightbox');
-  const lbImg=lb.querySelector('img');
-  const closeBtn=lb.querySelector('.lightbox-close');
-  function open(src){ lbImg.src=src; lb.classList.add('show'); }
-  function close(){ lb.classList.remove('show'); lbImg.removeAttribute('src'); }
-  const bindGallery = (id)=>{
-    const g=document.getElementById(id);
-    if(g) g.addEventListener('click',e=>{ if(e.target.tagName==='IMG') open(e.target.src); });
-  };
-  bindGallery('gallery'); bindGallery('gallery-instalacions');
-  lb.addEventListener('click',e=>{ if(e.target===lb) close(); });
-  if(closeBtn) closeBtn.addEventListener('click', close);
-  document.addEventListener('keydown',e=>{ if(e.key==='Escape') close(); });
-});
-
-// Mailto form
-function sendMailto(e){
-  e.preventDefault();
-  const name=document.getElementById('cf-name').value.trim();
-  const email=document.getElementById('cf-email').value.trim();
-  const msg=document.getElementById('cf-message').value.trim();
-  if(!name || !email || !msg){ return false; }
-
-  const subject=encodeURIComponent(`Contacto web – ${name}`);
-  const body=encodeURIComponent(`Nome: ${name}
-Email: ${email}
-
-Mensaxe:
-${msg}`);
-  const mail=`mailto:salgueiropaderne@gmail.com?subject=${subject}&body=${body}`;
-
-  // Dispara el mailto mediante un <a> oculto (mejor compatibilidad con Chrome/Edge)
-  const a=document.getElementById('mailto-hidden');
-  a.setAttribute('href', mail);
-  a.click();
-
-  // Refuerzo: cambia la URL de la pestaña actual
-  try{ window.location.assign(mail); }catch(_){}
-
-  // Último recurso: abre Gmail si el sistema no tiene cliente de correo predeterminado
-  setTimeout(()=>{
-    if (!document.hasFocus()) return; // ya navegó a mailto
-    const lang=(document.documentElement.lang||'gl');
-    const strings=dict[lang]||dict.gl;
-    const promptTxt=strings['mailto.prompt'] || dict.gl['mailto.prompt'];
-    const goGmail = confirm(promptTxt);
-    if(goGmail){
-      const url=`https://mail.google.com/mail/?view=cm&fs=1&to=salgueiropaderne@gmail.com&su=${subject}&body=${body}`;
-      window.open(url, '_blank', 'noopener');
-    }
-  }, 300);
-
-  return false;
-}
-
-// Tabs (hash) + recordar última
-const sections=['inicio','tenis','actividades','historia','instalacions','novas','tarifas','contacto'];
-function showSection(id){
-  try{ localStorage.setItem('last_tab', id); }catch(e){}
-  const mainHero=document.querySelector('main.hero');
-  const allSections=sections.map(s=>document.getElementById(s)).filter(Boolean);
-  allSections.forEach(el=>el.classList.add('hidden'));
-  if(id==='inicio'||!sections.includes(id)){
-    mainHero.classList.remove('hidden');
-  }else{
-    mainHero.classList.add('hidden');
-    const target=document.getElementById(id); if(target) target.classList.remove('hidden');
-  }
-  document.querySelectorAll('nav a[href^="#"]').forEach(a=>{
-    const ok=a.getAttribute('href')==='#'+id;
-    a.classList.toggle('active',ok);
-    a.setAttribute('aria-current', ok ? 'page' : 'false');
-  });
-  window.scrollTo({top:0,behavior:'instant'});
-}
-function initTabs(){
-  const initial=(location.hash.replace('#',''))||localStorage.getItem('last_tab')||'inicio';
-  showSection(initial);
-}
-window.addEventListener('hashchange', ()=>showSection(location.hash.replace('#','')||'inicio'));
-document.addEventListener('DOMContentLoaded', initTabs);
-
-// Footer year
-document.addEventListener('DOMContentLoaded', ()=>{
-  const y=document.getElementById('year'); if(y) y.textContent = new Date().getFullYear();
-});
-</script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
