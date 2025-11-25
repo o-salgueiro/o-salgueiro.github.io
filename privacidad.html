@@ -1,33 +1,337 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Política de Privacidad – Club O Salgueiro</title>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;margin:0;background:#fff;color:#111}
+  .container{max-width:900px;margin:2rem auto;padding:0 1rem}
+  header .nav{height:64px}
+  .lang-switch{display:flex;gap:.5rem;margin-bottom:1rem}
+  .lang-switch button{padding:.35rem .6rem;border:1px solid #ddd;background:#fff;border-radius:.4rem;cursor:pointer}
+  .lang-switch button[aria-pressed="true"]{border-color:#0b8457;background:#eaf7ee}
+  .content{margin-top:1rem}
+</style>
 </head>
 <body>
-<header><div class="container nav"></div></header>
-<main class="container" style="padding:2rem 0">
-  <h1>Cláusula informativa</h1>
-  <p>REGLAMENTO EUROPEO 679/2016 DE PROTECCIÓN DE DATOS PERSONALES</p>
-  <p>LEY ORGÁNICA 3/2018 DE PROTECCIÓN DE DATOS PERSONALES Y GARANTÍA DE LOS DERECHOS DIGITALES</p>
-  <h2><u>Responsable del Tratamiento</u></h2>
-  <p>Le informamos que los datos personales que Usted nos proporciona son incorporados a un tratamiento de datos personales denominado <b>CONTACTOS WEB SITE</b> cuyo responsable es SOCIEDAD DEPORTIVA O'SALGUEIRO con NIF G15115504 y con domicilio en Lg. de Barreiros, s/n, 15314 de Paderne, A Coruña (ESPAÑA). Puede contactar con el Responsable, bien por correo ordinario o bien mediante correo electrónico en el buzón salgueiropaderne@gmail.com.</p>
-  <h2><u>Delegado de Protección de Datos</u></h2>
-  <p>Eva Mª Lope de Toledo Aranguren, con NIF 79312670E y domicilio en Carretera Cambre - Temple, 6 2ª A, de 15660 - Cambre, de A Coruña (ESPAÑA). El correo electrónico de contacto es: eva16lopd(arroba)gmail.com.</p>
-  <h2><u>Finalidad del Tratamiento</u></h2>
-  <p>A través de los formularios de toma de datos incluidos en el sitio web del responsable, las personas que lo deseen pueden enviar sus mensajes, solicitudes de información, peticiones, ... etc acerca de los productos y/o servicios ofrecidos por el responsable del tratamiento.</p>
-  <h2><u>Plazo de Conservación</u></h2>
-  <p>Los datos personales se conservarán hasta la retirada del consentimiento por parte del interesado.</p>
-  <h2><u>Decisiones automatizadas y elaboración de perfiles</u></h2>
-  <p>No existen decisiones automatizadas ni elaboración de perfiles.</p>
-  <h2><u>Base Jurídica del Tratamiento</u></h2>
-  <p>La legitimación para la realización de este tratamiento radica en el consentimiento del interesado.</p>
-  <h2><u>Destinatarios de Cesiones</u></h2>
-  <p>No se prevén realizar cesiones a terceros, salvo aquellas que están autorizadas por ley.</p>
-  <h2><u>Transferencias Internacionales</u></h2>
-  <p>No se realizan transferencias internacionales.</p>
-  <h2><u>Derechos de los interesados</u></h2>
-  <p>Cualquier persona tiene derecho a obtener confirmación sobre si estamos tratando datos personales que les conciernan, o no. Las personas interesadas tienen derecho a acceder a sus datos personales, así como a solicitar la rectificación de los datos inexactos o, en su caso, solicitar su supresión cuando, entre otros motivos, los datos ya no sean necesarios para los fines que fueron recogidos. En determinadas circunstancias, los interesados podrán solicitar la limitación del tratamiento de sus datos, en cuyo caso únicamente los conservaremos para el ejercicio o la defensa de reclamaciones. Por motivos relacionados con su situación particular, los interesados podrán oponerse al tratamiento de sus datos. El Responsable del fichero dejará de tratar los datos, salvo por motivos legítimos imperiosos, o el ejercicio o la defensa de posibles reclamaciones. También se informa al interesado que puede presentar una reclamación ante la Autoridad de Control en materia de Protección de Datos.</p>
+<header><div class="container nav" aria-hidden="true"></div></header>
+
+<main class="container" role="main" aria-live="polite">
+  <nav class="lang-switch" aria-label="Seleccionar idioma">
+    <!-- orden solicitado: gl / es / en -->
+    <button data-lang="gl" aria-pressed="false">GL</button>
+    <button data-lang="es" aria-pressed="false">ES</button>
+    <button data-lang="en" aria-pressed="false">EN</button>
+  </nav>
+
+  <!-- GALLEGO -->
+  <article id="lang-gl" class="content" lang="gl" data-lang="gl" style="display:none">
+    <h1>Cláusula informativa</h1>
+    <p>REXULAMENTO EUROPEO 679/2016 DE PROTECCIÓN DE DATOS PERSOAIS</p>
+    <p>LEXE ORGÁNICA 3/2018 DE PROTECCIÓN DE DATOS PERSOAIS E GARANTÍA DOS DEREITOS DIXITAIS</p>
+
+    <h2><u>Responsable do Tratamento</u></h2>
+    <p>Infórmase que os datos persoais que vostede nos facilita incorpóranse a un tratamento de datos persoais denominado <b>CONTACTOS WEB SITE</b> cuxo responsable é SOCIEDADE DEPORTIVA O'SALGUEIRO con NIF G15115504 e con domicilio en Lg. de Barreiros, s/n, 15314 Paderne, A Coruña (ESPAÑA). Pode contactar co Responsable por correo postal ou por correo electrónico en salgueiropaderne@gmail.com.</p>
+
+    <h2><u>Delegado de Protección de Datos</u></h2>
+    <p>Eva Mª Lope de Toledo Aranguren, con NIF 79312670E e domicilio en Carretera Cambre - Temple, 6 2ª A, 15660 - Cambre, A Coruña (ESPAÑA). O correo electrónico de contacto é: eva16lopd(arroba)gmail.com.</p>
+
+    <h2><u>Finalidade do Tratamento</u></h2>
+    <p>A través dos formularios de recollida de datos incluídos no sitio web do responsable, as persoas interesadas poden enviar as súas mensaxes, solicitudes de información, peticións, etc. sobre os produtos e/ou servizos ofrecidos polo responsable do tratamento.</p>
+
+    <h2><u>Prazo de Conservación</u></h2>
+    <p>Os datos persoais conservaranse ata a retirada do consentimento por parte do interesado.</p>
+
+    <h2><u>Decisións automatizadas e elaboración de perfís</u></h2>
+    <p>Non existen decisións automatizadas nin elaboración de perfís.</p>
+
+    <h2><u>Base Xurídica do Tratamento</u></h2>
+    <p>A lexitimación para a realización deste tratamento radica no consentimento do interesado.</p>
+
+    <h2><u>Destinatarios de Cesións</u></h2>
+    <p>Non se prevén cesións a terceiros, salvo as obrigadas por lei.</p>
+
+    <h2><u>Transferencias Internacionais</u></h2>
+    <p>Non se realizan transferencias internacionais.</p>
+
+    <h2><u>Dereitos das persoas interesadas</u></h2>
+    <p>Calquera persoa ten dereito a obter confirmación sobre se estamos a tratar datos persoais que lle concirnan ou non. As persoas interesadas teñen dereito de acceso aos seus datos persoais, así como a solicitar a rectificación de datos inexactos ou, cando proceda, solicitar a súa supresión cando, entre outros motivos, os datos xa non sexan necesarios para os fins que foron recollidos. En determinadas circunstancias, os interesados poderán solicitar a limitación do tratamento dos seus datos, caso no cal os conservaremos só para o exercicio ou a defensa de reclamacións. Por motivos relacionados coa súa situación particular, os interesados poderán opoñerse ao tratamento dos seus datos. O Responsable do ficheiro deixará de tratar os datos, salvo por motivos lexítimos imperiosos, ou para o exercicio ou a defensa de posibles reclamacións. Tamén se informa ao interesado de que pode presentar unha reclamación ante a Autoridade de Control en materia de Protección de Datos.</p>
+  </article>
+
+  <!-- ESPAÑOL -->
+  <article id="lang-es" class="content" lang="es" data-lang="es" style="display:block">
+    <h1>Cláusula informativa</h1>
+    <p>REGLAMENTO EUROPEO 679/2016 DE PROTECCIÓN DE DATOS PERSONALES</p>
+    <p>LEY ORGÁNICA 3/2018 DE PROTECCIÓN DE DATOS PERSONALES Y GARANTÍA DE LOS DERECHOS DIGITALES</p>
+
+    <h2><u>Responsable del Tratamiento</u></h2>
+    <p>Le informamos que los datos personales que Usted nos proporciona son incorporados a un tratamiento de datos personales denominado <b>CONTACTOS WEB SITE</b> cuyo responsable es SOCIEDAD DEPORTIVA O'SALGUEIRO con NIF G15115504 y con domicilio en Lg. de Barreiros, s/n, 15314 de Paderne, A Coruña (ESPAÑA). Puede contactar con el Responsable, bien por correo ordinario o bien mediante correo electrónico en el buzón salgueiropaderne@gmail.com.</p>
+
+    <h2><u>Delegado de Protección de Datos</u></h2>
+    <p>Eva Mª Lope de Toledo Aranguren, con NIF 79312670E y domicilio en Carretera Cambre - Temple, 6 2ª A, de 15660 - Cambre, de A Coruña (ESPAÑA). El correo electrónico de contacto es: eva16lopd(arroba)gmail.com.</p>
+
+    <h2><u>Finalidad del Tratamiento</u></h2>
+    <p>A través de los formularios de toma de datos incluidos en el sitio web del responsable, las personas que lo deseen pueden enviar sus mensajes, solicitudes de información, peticiones, ... etc acerca de los productos y/o servicios ofrecidos por el responsable del tratamiento.</p>
+
+    <h2><u>Plazo de Conservación</u></h2>
+    <p>Los datos personales se conservarán hasta la retirada del consentimiento por parte del interesado.</p>
+
+    <h2><u>Decisiones automatizadas y elaboración de perfiles</u></h2>
+    <p>No existen decisiones automatizadas ni elaboración de perfiles.</p>
+
+    <h2><u>Base Jurídica del Tratamiento</u></h2>
+    <p>La legitimación para la realización de este tratamiento radica en el consentimiento del interesado.</p>
+
+    <h2><u>Destinatarios de Cesiones</u></h2>
+    <p>No se prevén realizar cesiones a terceros, salvo aquellas que están autorizadas por ley.</p>
+
+    <h2><u>Transferencias Internacionales</u></h2>
+    <p>No se realizan transferencias internacionales.</p>
+
+    <h2><u>Derechos de los interesados</u></h2>
+    <p>Cualquier persona tiene derecho a obtener confirmación sobre si estamos tratando datos personales que les conciernan, o no. Las personas interesadas tienen derecho a acceder a sus datos personales, así como a solicitar la rectificación de los datos inexactos o, en su caso, solicitar su supresión cuando, entre otros motivos, los datos ya no sean necesarios para los fines que fueron recogidos. En determinadas circunstancias, los interesados podrán solicitar la limitación del tratamiento de sus datos, en cuyo caso únicamente los conservaremos para el ejercicio o la defensa de reclamaciones. Por motivos relacionados con su situación particular, los interesados podrán oponerse al tratamiento de sus datos. El Responsable del fichero dejará de tratar los datos, salvo por motivos legítimos imperiosos, o el ejercicio o la defensa de posibles reclamaciones. También se informa al interesado que puede presentar una reclamación ante la Autoridad de Control en materia de Protección de Datos.</p>
+  </article>
+
+  <!-- ENGLISH -->
+  <article id="lang-en" class="content" lang="en" data-lang="en" style="display:none">
+    <h1>Information notice</h1>
+    <p>EU REGULATION 679/2016 ON THE PROTECTION OF PERSONAL DATA</p>
+    <p>ORGANIC LAW 3/2018 ON THE PROTECTION OF PERSONAL DATA AND GUARANTEE OF DIGITAL RIGHTS</p>
+
+    <h2><u>Data Controller</u></h2>
+    <p>Please be informed that the personal data you provide to us are incorporated into a personal data processing system named <b>CONTACTOS WEB SITE</b>, the controller of which is SOCIEDAD DEPORTIVA O'SALGUEIRO with NIF G15115504 and registered address at Lg. de Barreiros, s/n, 15314 Paderne, A Coruña (SPAIN). You may contact the Controller by postal mail or by email at salgueiropaderne@gmail.com.</p>
+
+    <h2><u>Data Protection Officer</u></h2>
+    <p>Eva Mª Lope de Toledo Aranguren, NIF 79312670E, address Carretera Cambre - Temple, 6 2ª A, 15660 - Cambre, A Coruña (SPAIN). Contact email: eva16lopd(arroba)gmail.com.</p>
+
+    <h2><u>Purpose of Processing</u></h2>
+    <p>Through the data collection forms included on the controller's website, people may send messages, information requests, petitions, etc. regarding the products and/or services offered by the controller.</p>
+
+    <h2><u>Retention Period</u></h2>
+    <p>Personal data will be retained until the withdrawal of the data subject's consent.</p>
+
+    <h2><u>Automated decisions and profiling</u></h2>
+    <p>There are no automated decisions or profiling.</p>
+
+    <h2><u>Legal basis for processing</u></h2>
+    <p>The legal basis for this processing is the consent of the data subject.</p>
+
+    <h2><u>Recipients</u></h2>
+    <p>No disclosures to third parties are foreseen, except those required by law.</p>
+
+    <h2><u>International transfers</u></h2>
+    <p>No international transfers are carried out.</p>
+
+    <h2><u>Data subject rights</u></h2>
+    <p>Any person has the right to obtain confirmation as to whether we are processing personal data relating to them. Data subjects have the right to access their personal data and to request rectification of inaccurate data or, where applicable, request erasure when, inter alia, the data are no longer necessary for the purposes for which they were collected. In certain circumstances, data subjects may request restriction of processing, in which case we will only retain the data for the exercise or defence of claims. For reasons related to their particular situation, data subjects may object to the processing of their data. The Controller will cease processing the data, except for compelling legitimate reasons, or for the exercise or defence of possible claims. Data subjects are also informed that they may lodge a complaint with the Supervisory Authority for Data Protection.</p>
+  </article>
 </main>
+
+<script>
+(function(){
+  const buttons = Array.from(document.querySelectorAll('.lang-switch button[data-lang]'));
+  const articles = {
+    gl: document.getElementById('lang-gl'),
+    es: document.getElementById('lang-es'),
+    en: document.getElementById('lang-en')
+  };
+  const storageKey = 'lang';
+
+  function getStored(){ try{ return localStorage.getItem(storageKey); }catch(e){ return null; } }
+  function setStored(l){ try{ localStorage.setItem(storageKey,l); }catch(e){} }
+
+  function setLang(l){
+    Object.keys(articles).forEach(k => {
+      articles[k].style.display = (k===l ? 'block' : 'none');
+    });
+    document.querySelectorAll('.lang-switch button').forEach(b=>{
+      b.setAttribute('aria-pressed', b.dataset.lang===l ? 'true' : 'false');
+    });
+    document.documentElement.lang = l;
+    setStored(l);
+  }
+
+  // initialize: prefer localStorage, else html lang, else 'gl' if available, else 'es'
+  const initial = getStored() || document.documentElement.lang || 'gl';
+  setLang(initial);
+
+  document.querySelectorAll('.lang-switch button').forEach(btn=>{
+    btn.addEventListener('click', ()=> setLang(btn.dataset.lang));
+    btn.addEventListener('keydown', e => {
+      if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setLang(btn.dataset.lang); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
+```// filepath: /Users/luciaalvarez/Documents/GitHub/O-Salgueiro/privacidad.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Política de Privacidad – Club O Salgueiro</title>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;margin:0;background:#fff;color:#111}
+  .container{max-width:900px;margin:2rem auto;padding:0 1rem}
+  header .nav{height:64px}
+  .lang-switch{display:flex;gap:.5rem;margin-bottom:1rem}
+  .lang-switch button{padding:.35rem .6rem;border:1px solid #ddd;background:#fff;border-radius:.4rem;cursor:pointer}
+  .lang-switch button[aria-pressed="true"]{border-color:#0b8457;background:#eaf7ee}
+  .content{margin-top:1rem}
+</style>
+</head>
+<body>
+<header><div class="container nav" aria-hidden="true"></div></header>
+
+<main class="container" role="main" aria-live="polite">
+  <nav class="lang-switch" aria-label="Seleccionar idioma">
+    <!-- orden solicitado: gl / es / en -->
+    <button data-lang="gl" aria-pressed="false">GL</button>
+    <button data-lang="es" aria-pressed="false">ES</button>
+    <button data-lang="en" aria-pressed="false">EN</button>
+  </nav>
+
+  <!-- GALLEGO -->
+  <article id="lang-gl" class="content" lang="gl" data-lang="gl" style="display:none">
+    <h1>Cláusula informativa</h1>
+    <p>REXULAMENTO EUROPEO 679/2016 DE PROTECCIÓN DE DATOS PERSOAIS</p>
+    <p>LEXE ORGÁNICA 3/2018 DE PROTECCIÓN DE DATOS PERSOAIS E GARANTÍA DOS DEREITOS DIXITAIS</p>
+
+    <h2><u>Responsable do Tratamento</u></h2>
+    <p>Infórmase que os datos persoais que vostede nos facilita incorpóranse a un tratamento de datos persoais denominado <b>CONTACTOS WEB SITE</b> cuxo responsable é SOCIEDADE DEPORTIVA O'SALGUEIRO con NIF G15115504 e con domicilio en Lg. de Barreiros, s/n, 15314 Paderne, A Coruña (ESPAÑA). Pode contactar co Responsable por correo postal ou por correo electrónico en salgueiropaderne@gmail.com.</p>
+
+    <h2><u>Delegado de Protección de Datos</u></h2>
+    <p>Eva Mª Lope de Toledo Aranguren, con NIF 79312670E e domicilio en Carretera Cambre - Temple, 6 2ª A, 15660 - Cambre, A Coruña (ESPAÑA). O correo electrónico de contacto é: eva16lopd(arroba)gmail.com.</p>
+
+    <h2><u>Finalidade do Tratamento</u></h2>
+    <p>A través dos formularios de recollida de datos incluídos no sitio web do responsable, as persoas interesadas poden enviar as súas mensaxes, solicitudes de información, peticións, etc. sobre os produtos e/ou servizos ofrecidos polo responsable do tratamento.</p>
+
+    <h2><u>Prazo de Conservación</u></h2>
+    <p>Os datos persoais conservaranse ata a retirada do consentimento por parte do interesado.</p>
+
+    <h2><u>Decisións automatizadas e elaboración de perfís</u></h2>
+    <p>Non existen decisións automatizadas nin elaboración de perfís.</p>
+
+    <h2><u>Base Xurídica do Tratamento</u></h2>
+    <p>A lexitimación para a realización deste tratamento radica no consentimento do interesado.</p>
+
+    <h2><u>Destinatarios de Cesións</u></h2>
+    <p>Non se prevén cesións a terceiros, salvo as obrigadas por lei.</p>
+
+    <h2><u>Transferencias Internacionais</u></h2>
+    <p>Non se realizan transferencias internacionais.</p>
+
+    <h2><u>Dereitos das persoas interesadas</u></h2>
+    <p>Calquera persoa ten dereito a obter confirmación sobre se estamos a tratar datos persoais que lle concirnan ou non. As persoas interesadas teñen dereito de acceso aos seus datos persoais, así como a solicitar a rectificación de datos inexactos ou, cando proceda, solicitar a súa supresión cando, entre outros motivos, os datos xa non sexan necesarios para os fins que foron recollidos. En determinadas circunstancias, os interesados poderán solicitar a limitación do tratamento dos seus datos, caso no cal os conservaremos só para o exercicio ou a defensa de reclamacións. Por motivos relacionados coa súa situación particular, os interesados poderán opoñerse ao tratamento dos seus datos. O Responsable do ficheiro deixará de tratar os datos, salvo por motivos lexítimos imperiosos, ou para o exercicio ou a defensa de posibles reclamacións. Tamén se informa ao interesado de que pode presentar unha reclamación ante a Autoridade de Control en materia de Protección de Datos.</p>
+  </article>
+
+  <!-- ESPAÑOL -->
+  <article id="lang-es" class="content" lang="es" data-lang="es" style="display:block">
+    <h1>Cláusula informativa</h1>
+    <p>REGLAMENTO EUROPEO 679/2016 DE PROTECCIÓN DE DATOS PERSONALES</p>
+    <p>LEY ORGÁNICA 3/2018 DE PROTECCIÓN DE DATOS PERSONALES Y GARANTÍA DE LOS DERECHOS DIGITALES</p>
+
+    <h2><u>Responsable del Tratamiento</u></h2>
+    <p>Le informamos que los datos personales que Usted nos proporciona son incorporados a un tratamiento de datos personales denominado <b>CONTACTOS WEB SITE</b> cuyo responsable es SOCIEDAD DEPORTIVA O'SALGUEIRO con NIF G15115504 y con domicilio en Lg. de Barreiros, s/n, 15314 de Paderne, A Coruña (ESPAÑA). Puede contactar con el Responsable, bien por correo ordinario o bien mediante correo electrónico en el buzón salgueiropaderne@gmail.com.</p>
+
+    <h2><u>Delegado de Protección de Datos</u></h2>
+    <p>Eva Mª Lope de Toledo Aranguren, con NIF 79312670E y domicilio en Carretera Cambre - Temple, 6 2ª A, de 15660 - Cambre, de A Coruña (ESPAÑA). El correo electrónico de contacto es: eva16lopd(arroba)gmail.com.</p>
+
+    <h2><u>Finalidad del Tratamiento</u></h2>
+    <p>A través de los formularios de toma de datos incluidos en el sitio web del responsable, las personas que lo deseen pueden enviar sus mensajes, solicitudes de información, peticiones, ... etc acerca de los productos y/o servicios ofrecidos por el responsable del tratamiento.</p>
+
+    <h2><u>Plazo de Conservación</u></h2>
+    <p>Los datos personales se conservarán hasta la retirada del consentimiento por parte del interesado.</p>
+
+    <h2><u>Decisiones automatizadas y elaboración de perfiles</u></h2>
+    <p>No existen decisiones automatizadas ni elaboración de perfiles.</p>
+
+    <h2><u>Base Jurídica del Tratamiento</u></h2>
+    <p>La legitimación para la realización de este tratamiento radica en el consentimiento del interesado.</p>
+
+    <h2><u>Destinatarios de Cesiones</u></h2>
+    <p>No se prevén realizar cesiones a terceros, salvo aquellas que están autorizadas por ley.</p>
+
+    <h2><u>Transferencias Internacionales</u></h2>
+    <p>No se realizan transferencias internacionales.</p>
+
+    <h2><u>Derechos de los interesados</u></h2>
+    <p>Cualquier persona tiene derecho a obtener confirmación sobre si estamos tratando datos personales que les conciernan, o no. Las personas interesadas tienen derecho a acceder a sus datos personales, así como a solicitar la rectificación de los datos inexactos o, en su caso, solicitar su supresión cuando, entre otros motivos, los datos ya no sean necesarios para los fines que fueron recogidos. En determinadas circunstancias, los interesados podrán solicitar la limitación del tratamiento de sus datos, en cuyo caso únicamente los conservaremos para el ejercicio o la defensa de reclamaciones. Por motivos relacionados con su situación particular, los interesados podrán oponerse al tratamiento de sus datos. El Responsable del fichero dejará de tratar los datos, salvo por motivos legítimos imperiosos, o el ejercicio o la defensa de posibles reclamaciones. También se informa al interesado que puede presentar una reclamación ante la Autoridad de Control en materia de Protección de Datos.</p>
+  </article>
+
+  <!-- ENGLISH -->
+  <article id="lang-en" class="content" lang="en" data-lang="en" style="display:none">
+    <h1>Information notice</h1>
+    <p>EU REGULATION 679/2016 ON THE PROTECTION OF PERSONAL DATA</p>
+    <p>ORGANIC LAW 3/2018 ON THE PROTECTION OF PERSONAL DATA AND GUARANTEE OF DIGITAL RIGHTS</p>
+
+    <h2><u>Data Controller</u></h2>
+    <p>Please be informed that the personal data you provide to us are incorporated into a personal data processing system named <b>CONTACTOS WEB SITE</b>, the controller of which is SOCIEDAD DEPORTIVA O'SALGUEIRO with NIF G15115504 and registered address at Lg. de Barreiros, s/n, 15314 Paderne, A Coruña (SPAIN). You may contact the Controller by postal mail or by email at salgueiropaderne@gmail.com.</p>
+
+    <h2><u>Data Protection Officer</u></h2>
+    <p>Eva Mª Lope de Toledo Aranguren, NIF 79312670E, address Carretera Cambre - Temple, 6 2ª A, 15660 - Cambre, A Coruña (SPAIN). Contact email: eva16lopd(arroba)gmail.com.</p>
+
+    <h2><u>Purpose of Processing</u></h2>
+    <p>Through the data collection forms included on the controller's website, people may send messages, information requests, petitions, etc. regarding the products and/or services offered by the controller.</p>
+
+    <h2><u>Retention Period</u></h2>
+    <p>Personal data will be retained until the withdrawal of the data subject's consent.</p>
+
+    <h2><u>Automated decisions and profiling</u></h2>
+    <p>There are no automated decisions or profiling.</p>
+
+    <h2><u>Legal basis for processing</u></h2>
+    <p>The legal basis for this processing is the consent of the data subject.</p>
+
+    <h2><u>Recipients</u></h2>
+    <p>No disclosures to third parties are foreseen, except those required by law.</p>
+
+    <h2><u>International transfers</u></h2>
+    <p>No international transfers are carried out.</p>
+
+    <h2><u>Data subject rights</u></h2>
+    <p>Any person has the right to obtain confirmation as to whether we are processing personal data relating to them. Data subjects have the right to access their personal data and to request rectification of inaccurate data or, where applicable, request erasure when, inter alia, the data are no longer necessary for the purposes for which they were collected. In certain circumstances, data subjects may request restriction of processing, in which case we will only retain the data for the exercise or defence of claims. For reasons related to their particular situation, data subjects may object to the processing of their data. The Controller will cease processing the data, except for compelling legitimate reasons, or for the exercise or defence of possible claims. Data subjects are also informed that they may lodge a complaint with the Supervisory Authority for Data Protection.</p>
+  </article>
+</main>
+
+<script>
+(function(){
+  const buttons = Array.from(document.querySelectorAll('.lang-switch button[data-lang]'));
+  const articles = {
+    gl: document.getElementById('lang-gl'),
+    es: document.getElementById('lang-es'),
+    en: document.getElementById('lang-en')
+  };
+  const storageKey = 'lang';
+
+  function getStored(){ try{ return localStorage.getItem(storageKey); }catch(e){ return null; } }
+  function setStored(l){ try{ localStorage.setItem(storageKey,l); }catch(e){} }
+
+  function setLang(l){
+    Object.keys(articles).forEach(k => {
+      articles[k].style.display = (k===l ? 'block' : 'none');
+    });
+    document.querySelectorAll('.lang-switch button').forEach(b=>{
+      b.setAttribute('aria-pressed', b.dataset.lang===l ? 'true' : 'false');
+    });
+    document.documentElement.lang = l;
+    setStored(l);
+  }
+
+  // initialize: prefer localStorage, else html lang, else 'gl' if available, else 'es'
+  const initial = getStored() || document.documentElement.lang || 'gl';
+  setLang(initial);
+
+  document.querySelectorAll('.lang-switch button').forEach(btn=>{
+    btn.addEventListener('click', ()=> setLang(btn.dataset.lang));
+    btn.addEventListener('keydown', e => {
+      if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setLang(btn.dataset.lang); }
+    });
+  });
+})();
+</script>
 </body>
 </html>
