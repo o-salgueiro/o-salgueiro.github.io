@@ -72,21 +72,218 @@ body[data-cookie="required"] header, body[data-cookie="required"] .cookie-consen
   </div>
 </header>
 
-<!-- ...rest of page content unchanged... -->
-
-<!-- cookie consent banner (enlace relativo a cookies.html) -->
-<div id="cookie-consent" class="cookie-consent hidden" role="dialog" aria-live="polite" aria-label="Cookies">
-  <div class="cookie-inner">
-    <p><strong data-i18n="cookie.title">Uso de cookies</strong></p>
-    <p data-i18n="cookie.text">Utilizamos cookies propias y de terceros para mejorar la experiencia del sitio web. Para continuar navegando debe aceptar el uso de cookies.</p>
+<main id="inicio" class="hero">
+  <div class="container">
+    <div class="hero-photo carousel" id="hero-carousel">
+      <img src="assets/imagen01.jpg" alt="Foto club 1" class="active">
+      <img src="assets/IMGP2957.JPG" alt="Foto club 2">
+      <img src="assets/IMGP2961.JPG" alt="Foto club 3">
+      <img src="assets/IMGP2963.JPG" alt="Foto club 4">
+      <img src="assets/IMGP2967.JPG" alt="Foto club 5">
+      <img src="assets/IMGP2974.JPG" alt="Foto club 6">
+      <img src="assets/IMGP2980.JPG" alt="Foto club 7">
+      <img src="assets/IMGP2981.JPG" alt="Foto club 8">
+      <img src="assets/IMGP2983.JPG" alt="Foto club 9">
+      <img src="assets/IMGP2986.jpg" alt="Foto club 10">
+      <img src="assets/IMGP2995.JPG" alt="Foto club 11">
+      <img src="assets/IMGP3023.JPG" alt="Foto club 12">
+      <img src="assets/IMGP2991.JPG" alt="Foto club 13">
+    </div>
   </div>
-  <div style="display:flex;gap:.5rem;margin-left:1rem">
-    <a href="cookies.html" class="btn secondary cookie-allow" target="_blank" rel="noopener" data-i18n="cookie.more">Más información</a>
-    <button id="cookie-accept" class="btn" aria-label="Aceptar cookies" data-i18n="cookie.accept">Aceptar</button>
+  <div class="container wrap">
+    <div>
+      <span class="tag" data-i18n="hero.tag">Tenis como actividad principal</span>
+      <h1 data-i18n="hero.title">Tu club de tenis en A Coruña</h1>
+      <p data-i18n="hero.subtitle">Bienvenidos a la Sociedad Deportiva O'Salgueiro: club familiar para practicar tenis, pádel y natación en un entorno natural único.</p>
+      <div class="cta">
+        <a href="#tenis" class="btn"><span aria-hidden="true">🎾</span><span data-i18n="hero.cta.tennis">Ver tenis</span></a>
+        <a href="#contacto" class="btn secondary"><span aria-hidden="true">📨</span><span data-i18n="hero.cta.contact">Contactar</span></a>
+      </div>
+    </div>
   </div>
-</div>
 
-<!-- footer links (enlaces relativos) -->
+  <div class="container" id="club-desc" style="margin-top: -1rem;">
+    <div class="card">
+      <h2 data-i18n="club.title">Sociedad Deportiva O'Salgueiro</h2>
+      <p data-i18n="club.p1">La Sociedad Deportiva O'Salgueiro es un club deportivo de carácter familiar con estupendas instalaciones para la práctica del tenis, pádel y natación, actividades que pueden realizar personas de todas las edades y que son una manera de hacer deporte y también divertirse.</p>
+      <p data-i18n="club.p2">Se sitúa en un paisaje de gran belleza e integrada en plena naturaleza, lo que hace que la práctica del deporte sea más placentera.</p>
+      <p data-i18n="club.p3">Ven y conoce el Club de la Sociedad Deportiva O'Salgueiro, donde podrás disfrutar de tu deporte favorito.</p>
+    </div>
+  </div>
+</main>
+
+<section id="tenis" class="hidden">
+  <div class="container">
+    <h2 data-i18n="tennis.title">Tenis</h2>
+    <div class="grid-2">
+      <div class="card">
+        <div class="feature"><div class="feature-icon">🏟️</div>
+          <div><h3 data-i18n="tennis.facilities.title">Pistas e instalaciones</h3>
+          <p data-i18n="tennis.facilities.text">Pistas de tenis con iluminación y vestuarios. Entorno natural y tranquilo para jugar todo el año.</p></div>
+        </div>
+      </div>
+    </div>
+    <h3 style="margin-top:2rem">Galería</h3>
+    <div class="gallery" id="gallery">
+      <img src="assets/imagen01.jpg" alt="Instalacións do club 1">
+      <img src="assets/IMGP2957.JPG" alt="Foto club 2">
+      <img src="assets/IMGP2961.JPG" alt="Foto club 3">
+      <img src="assets/IMGP2963.JPG" alt="Foto club 4">
+      <img src="assets/IMGP2967.JPG" alt="Foto club 5">
+      <img src="assets/IMGP2974.JPG" alt="Foto club 6">
+      <img src="assets/IMGP2980.JPG" alt="Foto club 7">
+      <img src="assets/IMGP2981.JPG" alt="Foto club 8">
+      <img src="assets/IMGP2983.JPG" alt="Foto club 9">
+      <img src="assets/IMGP2986.jpg" alt="Foto club 10">
+      <img src="assets/IMGP2995.JPG" alt="Foto club 11">
+      <img src="assets/IMGP3023.JPG" alt="Foto club 12">
+      <img src="assets/IMGP2991.JPG" alt="Foto club 13">
+    </div>
+  </div>
+</section>
+
+<section id="actividades" class="hidden" style="background:var(--bg)">
+  <div class="container">
+    <h2 data-i18n="activities.title">Otras actividades</h2>
+    <div class="grid-3">
+      <div class="card"><h3 data-i18n="activities.padel.title">Pádel</h3><p data-i18n="activities.padel.text">Pista de hierba sintética con iluminación artificial.</p></div>
+      <div class="card"><h3 data-i18n="activities.pool.title">Piscina</h3><p data-i18n="activities.pool.text">Piscina al aire libre en amplia zona verde para la temporada de verano.</p></div>
+      <div class="card"><h3 data-i18n="activities.social.title">Actividades sociales</h3><p data-i18n="activities.social.text">Ligas internas de tenis, encuentros familiares y eventos del club.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="historia" class="hidden">
+  <div class="container">
+    <h2 data-i18n="history.title">Nuestra historia</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3 data-i18n="history.lead1">Nuestra historia</h3>
+        <p data-i18n="history.p1">El origen de la Sociedad Deportiva O'Salgueiro se remonta a 1975, cuando unos apasionados por el tenis se lanzaron a comprar unos terrenos para construir la pista de tenis. Casi todos ellos continúan a día de hoy practicando este deporte y siguen siendo socios del Club.</p>
+        <p data-i18n="history.p2">Aquella cancha del principio, con el paso de los años, fue evolucionando al actual conjunto de instalaciones que enriquecen los servicios que presta la Sociedad Deportiva a sus socios.</p>
+      </div>
+      <div class="card"><img src="assets/foto_historia01.jpg" alt="Historia 1" style="width:100%;border-radius:.6rem;border:1px solid #eee"></div>
+    </div>
+    <div class="grid-2" style="margin-top:1rem">
+      <div class="card">
+        <p data-i18n="history.p3">O'Salgueiro ha mantenido a lo largo de estos años una gran presencia en el mundo de la competición del tenis gallego.</p>
+        <p data-i18n="history.p4">Entre sus socios se encuentran, desde hace años y en la actualidad, campeones de Galicia, campeones de España y campeones de Europa en diversas categorías de veteranos, tanto en la modalidad de individuales como de dobles.</p>
+      </div>
+      <div class="card"><img src="assets/foto_historia02.jpg" alt="Historia 2" style="width:100%;border-radius:.6rem;border:1px solid #eee"></div>
+    </div>
+  </div>
+</section>
+
+<section id="instalacions" class="hidden" style="background:var(--bg)">
+  <div class="container">
+    <h2 data-i18n="fac.title">Instalaciones</h2>
+    <div class="grid-3">
+      <div class="card"><p data-i18n="fac.p1">Tres pistas de tenis quick, dos de ellas con iluminación artificial.</p></div>
+      <div class="card"><p data-i18n="fac.p2">Pista de pádel de hierba sintética con iluminación artificial.</p></div>
+      <div class="card"><p data-i18n="fac.p3">Campo de fútbol 7 de hierba natural.</p></div>
+      <div class="card"><p data-i18n="fac.p4">Magnífica piscina de 12 x 6 m dotada de las últimas tecnologías y con solárium de hierba natural.</p></div>
+      <div class="card"><p data-i18n="fac.p5">Pérgola con capacidad para 25 personas y tres parrillas a disposición de los socios.</p></div>
+      <div class="card"><p data-i18n="fac.p6">Sala de tecnificación.</p></div>
+    </div>
+    <h3>Casa Club</h3>
+    <ul>
+      <li data-i18n="fac.techroom">Sala de tecnificación.</li>
+      <li data-i18n="fac.gym">Gimnasio.</li>
+      <li data-i18n="fac.sauna">Sauna.</li>
+      <li data-i18n="fac.lockers">Vestuarios femeninos y masculinos.</li>
+      <li data-i18n="fac.lounge">Salón de TV y juegos de mesa.</li>
+      <li data-i18n="fac.pingpong">Tenis de mesa.</li>
+      <li data-i18n="fac.billiards">Mesa de billar francés.</li>
+    </ul>
+    <div class="gallery" id="gallery-instalacions" style="margin-top:1rem">
+      <img src="assets/foto_instalaciones02.jpg" alt="Instalacións 2">
+      <img src="assets/foto_instalaciones03.jpg" alt="Instalacións 3">
+      <img src="assets/foto_instalaciones04.jpg" alt="Instalacións 4">
+      <img src="assets/foto_instalaciones05.jpg" alt="Instalacións 5">
+      <img src="assets/foto_instalaciones06.jpg" alt="Instalacións 6">
+      <img src="assets/foto_instalaciones07.jpg" alt="Instalacións 7">
+      <img src="assets/foto_instalaciones08.jpg" alt="Instalacións 8">
+      <img src="assets/foto_instalaciones09.jpg" alt="Instalacións 9">
+    </div>
+  </div>
+</section>
+
+<section id="novas" class="hidden">
+  <div class="container">
+    <h2 data-i18n="news.title">Noticias</h2>
+    <div class="grid-3" id="news-list">
+      <!-- vacío: contenidos de noticias se completarán cuando haya novedades -->
+    </div>
+  </div>
+</section>
+
+<section id="tarifas" class="hidden" style="background:var(--bg)">
+  <div class="container">
+    <h2 data-i18n="fees.title">Tarifas</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3 data-i18n="fees.membership.title">Cuota familiar de socio</h3>
+        <p><strong>30€</strong> / mes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="hidden">
+  <div class="container">
+    <h2 data-i18n="contact.title">Contacto</h2>
+    <div class="grid-2">
+      <div class="card">
+        <form id="contact-form" onsubmit="return sendMailto(event)">
+          <a id="mailto-hidden" href="#" style="display:none" rel="noopener"></a>
+          <label><span data-i18n="contact.name">Nombre</span><br>
+            <input id="cf-name" name="name" required style="width:100%;padding:.7rem;border:1px solid #ddd;border-radius:.6rem;margin:.3rem 0"></label>
+          <label><span>Email</span><br>
+            <input id="cf-email" name="email" type="email" required style="width:100%;padding:.7rem;border:1px solid #ddd;border-radius:.6rem;margin:.3rem 0"></label>
+          <label><span data-i18n="contact.message">Mensaje</span><br>
+            <textarea id="cf-message" name="message" required rows="5" style="width:100%;padding:.7rem;border:1px solid #ddd;border-radius:.6rem;margin:.3rem 0"></textarea></label>
+
+          <!-- checkbox obligatorio para privacidad -->
+          <label style="display:block;margin-top:.5rem;">
+            <input id="cf-privacy" type="checkbox" style="margin-right:.5rem" required>
+            <span data-i18n="contact.privacy.accept">ACEPTO LA POLÍTICA DE PRIVACIDAD PARA EL TRATAMIENTO DE LOS DATOS PERSONALES DE ACUERDO CON LA LOPD-DGG 3/2018 y RGPD 679/2016.</span>
+          </label>
+
+          <button class="btn" type="submit" data-i18n="contact.send">Enviar</button>
+          <p style="color:var(--muted);margin:.5rem 0 0">O envíanos un correo directo: <a href="mailto:salgueiropaderne@gmail.com">salgueiropaderne@gmail.com</a></p>
+          <div class="email-buttons" style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem">
+            <a class="btn secondary" target="_blank" rel="noopener" href="https://mail.google.com/mail/?view=cm&fs=1&to=salgueiropaderne@gmail.com">Abrir en Gmail</a>
+            <a class="btn secondary" target="_blank" rel="noopener" href="https://outlook.office.com/mail/deeplink/compose?to=salgueiropaderne@gmail.com">Abrir en Outlook</a>
+          </div>
+        </form>
+      </div>
+      <div class="card">
+        <h3 data-i18n="contact.where">Dónde estamos</h3>
+        <p><strong>Sociedad Deportiva O'Salgueiro</strong><br>Lg. de Barreiros, s/n · 15314 Paderne (A Coruña)</p>
+        <p><a href="https://www.google.com/maps/dir/''/CLUB+OSALGUEIRO+Lugar+de+Barreiros,+s%2Fn+15314+Paderne+A+Coruña/@43.2918118,-8.1715297,641m/data=!3m1!1e3!4m13!4m12!1m5!1m1!1s0xd2e6dbe4c827ead:0xab25a5ef1b08b6cc!2m2!1d-8.1715297!2d43.2918118!1m5!1m1!1s0xd2e6dbe4c827ead:0xab25a5ef1b08b6cc!2m2!1d-8.1715297!2d43.2918118?entry=ttu" target="_blank" rel="noopener" data-i18n="contact.map">Ver en Google Maps</a></p>
+        <p data-i18n="contact.extra">A 4 km de Betanzos · Horario 24 horas</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="patrocinios" style="background:var(--bg)">
+  <div class="container">
+    <h2 data-i18n="sponsor.title">Patrocinios</h2>
+    <div class="grid-3">
+      <div class="card" style="display:flex;align-items:center;justify-content:center">
+        <img src="assets/DepCor_horiz_page-0001.jpg" alt="Deputación da Coruña" style="max-width:240px;height:auto">
+      </div>
+    </div>
+    <div class="card" style="margin-top:1rem;background:#f9fdfb;border-color:#dff2e8">
+      <h3 style="color:var(--primary);margin-top:0" data-i18n="sponsor.dep.title">Deputación da Coruña</h3>
+      <p><strong data-i18n="sponsor.dep.call">Convocatoria FO104/2025</strong></p>
+      <p data-i18n="sponsor.dep.object">Obxecto: Renovación do firme da pista 2</p>
+      <p style="margin-bottom:0"><strong data-i18n="sponsor.dep.amount">Importe concedido: 12.500,00€</strong></p>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="container" style="padding:2rem 0">
     <div class="footer-grid">
@@ -118,6 +315,20 @@ body[data-cookie="required"] header, body[data-cookie="required"] .cookie-consen
     <p style="margin-top:1rem;color:#cfeede">© <span id="year"></span> Club O Salgueiro</p>
   </div>
 </footer>
+
+<div class="lightbox" id="lightbox"><button class="lightbox-close" aria-label="Cerrar">×</button><img alt="ampliada"></div>
+
+<!-- cookie consent banner -->
+<div id="cookie-consent" class="cookie-consent hidden" role="dialog" aria-live="polite" aria-label="Cookies">
+  <div class="cookie-inner">
+    <p><strong data-i18n="cookie.title">Uso de cookies</strong></p>
+    <p data-i18n="cookie.text">Utilizamos cookies propias y de terceros para mejorar la experiencia del sitio web. Para continuar navegando debe aceptar el uso de cookies.</p>
+  </div>
+  <div style="display:flex;gap:.5rem;margin-left:1rem">
+    <a href="cookies.html" class="btn secondary cookie-allow" target="_blank" rel="noopener" data-i18n="cookie.more">Más información</a>
+    <button id="cookie-accept" class="btn" aria-label="Aceptar cookies" data-i18n="cookie.accept">Aceptar</button>
+  </div>
+</div>
 
 <script src="i18n.js"></script>
 <script src="app.js"></script>
