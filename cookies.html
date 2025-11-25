@@ -1,79 +1,176 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Política de Cookies – Club O Salgueiro</title>
-<meta name="description" content="Política de cookies de la Sociedad Deportiva O'Salgueiro. Información sobre qué son las cookies, qué tipos usamos y cómo gestionarlas.">
+<meta name="description" content="Política de cookies de la Sociedad Deportiva O'Salgueiro. Información sobre qué son las cookies, qué tipos usamos y cómo gestionarlas." />
 <style>
-  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;color:#1b1b1b;background:#fff}
-  .container{max-width:900px;margin:2rem auto;padding:0 1rem}
+  :root{
+    --text:#1b1b1b;
+    --accent:#0b8457;
+    --muted:#666;
+    --bg:#fff;
+    --border:#e6e6e6;
+    --gap:1rem;
+    --container:900px;
+  }
+
+  html,body{height:100%}
+  body{
+    font-family: system-ui,-apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin:0;
+    color:var(--text);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+  }
+
+  .container{
+    max-width:var(--container);
+    margin:2rem auto;
+    padding:0 1rem;
+  }
+
   header .nav{height:64px}
-  h1,h2{color:#0b8457}
-  .lang-switch{display:flex;gap:.5rem;margin-bottom:1rem}
-  .lang-switch button{padding:.35rem .6rem;border-radius:.4rem;border:1px solid #ddd;background:#fff;cursor:pointer}
-  .lang-switch button.active{border-color:#0b8457;background:#eaf7ee}
-  .section{margin-bottom:1rem}
-  table{width:100%;border-collapse:collapse;margin:1rem 0}
-  th,td{border:1px solid #e6e6e6;padding:.6rem;text-align:left}
-  footer{margin-top:2rem;color:#666;font-size:.9rem}
+  h1,h2{color:var(--accent);margin-top:0}
+  .lang-switch{
+    display:flex;
+    gap:.5rem;
+    margin-bottom:1rem;
+    align-items:center;
+  }
+
+  .lang-switch button{
+    padding:.35rem .6rem;
+    border-radius:.4rem;
+    border:1px solid #ddd;
+    background:#fff;
+    cursor:pointer;
+    font-weight:600;
+  }
+
+  .lang-switch button[aria-pressed="true"]{
+    border-color:var(--accent);
+    background:#eaf7ee;
+  }
+
+  .content{margin-bottom:var(--gap)}
+  .section{margin-bottom:.75rem}
+  table{width:100%;border-collapse:collapse;margin:1rem 0;display:block;overflow:auto}
+  th,td{border:1px solid var(--border);padding:.6rem;text-align:left}
+  footer{margin-top:2rem;color:var(--muted);font-size:.9rem}
+
+  /* utility */
+  .hidden{display:none !important}
+  .sr-only{
+    position:absolute;
+    width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+  }
 </style>
 </head>
 <body>
 <header>
-  <div class="container nav">
+  <div class="container nav" aria-hidden="true">
     <!-- simple nav placeholder to keep header layout consistente -->
   </div>
 </header>
 
-<main class="container" role="main">
-  <div class="lang-switch" aria-hidden="false">
-    <button id="btn-es">ES</button>
-    <button id="btn-gl">GL</button>
-    <button id="btn-en">EN</button>
-  </div>
+<main class="container" role="main" aria-live="polite">
+  <nav class="lang-switch" aria-label="Seleccionar idioma / Select language / Seleccionar idioma">
+    <div class="sr-only" id="lang-label">Idioma</div>
+    <button data-lang="es" aria-pressed="false" aria-labelledby="lang-label">ES</button>
+    <button data-lang="gl" aria-pressed="false" aria-labelledby="lang-label">GL</button>
+    <button data-lang="en" aria-pressed="false" aria-labelledby="lang-label">EN</button>
+  </nav>
 
   <!-- ESPAÑOL -->
-  <article id="lang-es" class="content" lang="es">
+  <article id="lang-es" class="content" lang="es" data-lang="es">
     <h1>Política de Cookies</h1>
-    <p class="section">La presente Política de Cookies explica qué son las cookies, para qué las utiliza la Sociedad Deportiva O'Salgueiro (en adelante "el Club") en este sitio web y cómo puedes gestionarlas.</p>
 
-    <h2>1. ¿Qué son las cookies?</h2>
-    <p class="section">Las cookies son pequeños archivos de texto que los sitios web que visitas envían a tu navegador para almacenar y recuperar información. Permiten que el sitio recuerde tus preferencias, proporcione funcionalidades y obtenga datos estadísticos de uso.</p>
+    <h2>1. Antecedentes</h2>
+    <p class="section">De conformidad con la normativa española que regula el uso de cookies en relación a la prestación de servicios de comunicaciones electrónicas, recogida en el artículo 22.2 de la Ley 34/2002, del 11 de julio, de servicios de la sociedad de la información y de comercio electrónico, le informamos sobre las cookies utilizadas en el sitio web de <b>SOCIEDAD DEPORTIVA O'SALGUEIRO</b> y el motivo de su uso.</p>
 
-    <h2>2. ¿Qué tipos de cookies utilizamos?</h2>
-    <p class="section">A continuación se describen los tipos de cookies que pueden aparecer en este sitio:</p>
+    <h2>2. ¿Qué son las cookies?</h2>
+    <p class="section">Una cookie es un fichero que se descarga en su ordenador al acceder a determinadas páginas web. Las cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo y, dependiendo de la información que contengan y de la forma en que utilice su equipo, pueden utilizarse para reconocer al usuario. Las cookies se asocian únicamente a un usuario anónimo y su ordenador o dispositivo y no proporcionan referencias que permitan conocer sus datos personales.</p>
 
-    <table>
-      <thead><tr><th>Tipo</th><th>Propósito</th><th>Ejemplos</th></tr></thead>
+    <h2>3. Tipos de cookies</h2>
+    <h3><u>3.1. Según la entidad que las gestiona</u></h3>
+    <p class="section"><b>a) Cookies propias:</b> son aquellas que se envían al equipo terminal del usuario desde un equipo o dominio gestionado por el propio editor y desde el que se presta el servicio solicitado por el usuario.</p>
+    <p class="section"><b>b) Cookies de terceros:</b> son aquellas que se envían al equipo terminal del usuario desde un equipo o dominio que no es gestionado por el editor, sino por otra entidad que trata los datos obtenidos a través de las cookies.</p>
+
+    <h3><u>3.2. Según la finalidad</u></h3>
+    <p class="section">Existen muchas finalidades para el uso de las cookies. Según la finalidad para la que se traten los datos obtenidos a través de las cookies, algunas de las finalidades pueden ser:</p>
+    <p class="section"><b>a) Cookies técnicas:</b> son aquellas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan, incluyendo aquellas que el editor utiliza para permitir la gestión y operativa de la página web y habilitar sus funciones y servicios, como, por ejemplo, controlar el tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido, gestionar el pago, controlar el fraude vinculado a la seguridad del servicio, realizar la solicitud de inscripción o participación en un evento, contar visitas a efectos de la facturación de licencias del software con el que funciona el servicio (sitio web, plataforma o aplicación), utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de vídeos o sonido, habilitar contenidos dinámicos (por ejemplo, animación de carga de un texto o imagen) o compartir contenidos a través de redes sociales.
+Las cookies técnicas estarán exceptuadas del cumplimiento de las obligaciones establecidas en el artículo 22.2 de la LSSI cuando permitan prestar el servicio solicitado por el usuario, como ocurre en el caso de las cookies enumeradas en los párrafos anteriores. Sin embargo, si estas cookies se utilizan también para finalidades no exentas (por ejemplo, para fines publicitarios comportamentales), quedarán sujetas a dichas obligaciones.</p>
+    <p class="section"><b>b) Cookies de preferencias o personalización:</b> son aquellas que permiten recordar información para que el usuario acceda al servicio con determinadas características que pueden diferenciar su experiencia de la de otros usuarios, como, por ejemplo, el idioma, el número de resultados a mostrar cuando el usuario realiza una búsqueda, el aspecto o contenido del servicio en función del tipo de navegador a través del cual el usuario accede al servicio o de la región desde la que accede al servicio, etc.
+Si es el propio usuario quien elige esas características (por ejemplo, si selecciona el idioma de un sitio web clicando en el icono de la bandera del país correspondiente), las cookies estarán exceptuadas de las obligaciones del artículo 22.2 de la LSSI por considerarse un servicio expresamente solicitado por el usuario, y ello siempre y cuando las cookies obedezcan exclusivamente a la finalidad seleccionada.</p>
+    <p class="section"><b>c) Cookies de análisis o medición:</b> son aquellas que permiten al responsable de las mismas el seguimiento y análisis del comportamiento de los usuarios de los sitios web a los que están vinculadas, incluida la cuantificación de los impactos de los anuncios. La información recogida mediante este tipo de cookies se utiliza en la medición de la actividad de los sitios web, aplicación o plataforma, con el fin de introducir mejoras en función del análisis de los datos de uso que hacen los usuarios del servicio.</p>
+    <p class="section"><b>d) Cookies de publicidad comportamental:</b> son aquellas que almacenan información del comportamiento de los usuarios obtenida a través de la observación continuada de sus hábitos de navegación, lo que permite desarrollar un perfil específico para mostrar publicidad en función del mismo.</p>
+
+    <h3><u>3.3. Según el plazo de tiempo que permanecen activadas</u></h3>
+    <p class="section"><b>a) Cookies de sesión:</b> son aquellas diseñadas para recabar y almacenar datos mientras el usuario accede a una página web. Se suelen emplear para almacenar información que solo interesa conservar para la prestación del servicio solicitado por el usuario en una sola ocasión (por ejemplo, una lista de productos adquiridos) y desaparecen al terminar la sesión.</p>
+    <p class="section"><b>b) Cookies persistentes:</b> son aquellas en las que los datos siguen almacenados en el terminal y pueden ser accedidos y tratados durante un periodo definido por el responsable de la cookie, y que puede ir de unos minutos a varios años.</p>
+
+    <h2>4. Listado de cookies utilizadas por este sitio web</h2>
+-    <p class="section">La utilización de las cookies ofrece ventajas en la prestación de servicios dentro de lo que se conoce como la sociedad de la información, puesto que, facilita al usuario la navegación y el acceso a los diferentes servicios que ofrece este sitio web; evita al usuario tener que configurar las características generales predefinidas cada vez que accede al sitio web; favorece la mejora del funcionamiento y de los servicios prestados a través de este sitio web, tras el correspondiente análisis de la información obtenida a través de las cookies instaladas.
+-En concreto este sitio web utiliza las siguientes cookies:</p>
++    <p class="section">La utilización de las cookies puede ofrecer ventajas para la prestación de servicios. A continuación se detalla qué cookies utiliza este sitio web.</p>
++
++    <!-- Tabla de cookies reales -->
++    <table aria-describedby="cookies-note">
++      <thead>
++        <tr>
++          <th>Nombre</th>
++          <th>Entidad</th>
++          <th>Caducidad</th>
++          <th>Finalidad</th>
++        </tr>
++      </thead>
++      <tbody>
++        <tr>
++          <td colspan="4" style="font-weight:700;text-align:left;">
++            No se utiliza ninguna cookie propia ni de terceros desde el código del sitio. Todas las preferencias y el consentimiento se gestionan mediante <code>localStorage</code>.
++          </td>
++        </tr>
++      </tbody>
++    </table>
++    <p id="cookies-note" class="section" style="margin-top:.5rem;color:var(--muted);">
++      Nota: este sitio no instala cookies por defecto. En su lugar guarda las siguientes claves en <code>localStorage</code> del navegador:
++      <ul>
++        <li><code>os_cookie_consent</code> — almacena si el usuario aceptó las cookies (valor: "accepted").</li>
++        <li><code>lang</code> — idioma seleccionado por el usuario ("es", "gl" o "en").</li>
++        <li><code>last_tab</code> — (opcional) pestaña/section última visitada (si está en uso).</li>
++      </ul>
++      Si en el futuro se integran servicios de terceros (por ejemplo Google Analytics, mapas o reproductores de vídeo) estas entidades podrán establecer sus propias cookies; en tal caso se actualizará esta tabla con el nombre, entidad, caducidad y finalidad correspondientes.
++    </p>
+
+    <h2>5. Revocación y eliminación de cookies</h2>
+    <p class="section">En todo momento podrá acceder a la configuración de su navegador aceptando o rechazando todas las cookies, o bien seleccionar aquéllas cuya instalación admite y cuáles no, siguiendo los procedimientos propios del navegador que utilice.</p>
+
+    <h2>6. Terceros prestadores de servicios</h2>
+    <p class="section">Los terceros prestadores de servicios con los que hemos contratado algún servicio para el que es necesario la utilización de cookies son los que se listan a continuación:</p>
+
+    <!-- Tabla de terceros -->
+    <table aria-describedby="thirds-note">
+      <thead>
+        <tr>
+          <th>Proveedor</th>
+          <th>Finalidad del servicio y de la cookie</th>
+          <th>Información del proveedor</th>
+        </tr>
+      </thead>
       <tbody>
-        <tr><td>Necesarias</td><td>Permiten la navegación y el uso de funciones básicas (p. ej. acceso a áreas seguras).</td><td>cookie de sesión</td></tr>
-        <tr><td>Funcionales</td><td>Recordar preferencias (idioma, región) y mejorar la experiencia.</td><td>preferencias de idioma</td></tr>
-        <tr><td>Analíticas</td><td>Recogen información sobre cómo se utiliza el sitio para mejorar su rendimiento.</td><td>Google Analytics (ID anónimo)</td></tr>
-        <tr><td>Publicidad</td><td>Permiten mostrar anuncios relevantes y medir su efectividad.</td><td>cookies de terceros de redes publicitarias</td></tr>
+        <tr>
+          <td colspan="3" style="font-weight:700;text-align:left;">
+            En la configuración actual del sitio no se cargan servicios de terceros que establezcan cookies. Por tanto, no hay cookies de terceros en uso.
+          </td>
+        </tr>
       </tbody>
     </table>
-
-    <h2>3. Cookies de terceros</h2>
-    <p class="section">En algunas páginas o funcionalidades pueden cargarse recursos de terceros (por ejemplo, mapas, vídeos o herramientas analíticas). Esos terceros pueden establecer sus propias cookies. El Club no controla esas cookies; consulta las políticas de privacidad de los proveedores para más detalles.</p>
-
-    <h2>4. ¿Cómo gestionar o eliminar cookies?</h2>
-    <p class="section">Puedes permitir, bloquear o eliminar las cookies mediante la configuración de tu navegador. A continuación instrucciones rápidas para navegadores comunes:</p>
-    <ul>
-      <li>Chrome: Configuración > Privacidad y seguridad > Cookies y otros datos de sitios.</li>
-      <li>Safari (macOS): Preferencias > Privacidad > Gestionar datos del sitio web.</li>
-      <li>Firefox: Preferencias > Privacidad & Seguridad > Cookies y datos de sitios.</li>
-    </ul>
-    <p class="section">También puedes borrar las cookies desde la configuración del navegador o usar modos privados. Ten en cuenta que bloquear cookies puede afectar al funcionamiento del sitio.</p>
-
-    <h2>5. Consentimiento y control</h2>
-    <p class="section">Al navegar por el sitio se mostrará un banner para recabar tu consentimiento. Puedes aceptar o rechazar las cookies no necesarias. La elección se guarda localmente en tu navegador.</p>
-
-    <h2>6. Cambios en la política</h2>
-    <p class="section">El Club puede actualizar esta política. La versión publicada en esta página es la vigente.</p>
-
-    <h2>7. Contacto</h2>
-    <p class="section">Si tienes preguntas sobre esta Política de Cookies puedes escribir a: <a href="mailto:salgueiropaderne@gmail.com">salgueiropaderne@gmail.com</a></p>
+    <p id="thirds-note" class="section" style="color:var(--muted);">
+      Nota: si se integran en el futuro servicios como Google Analytics, mapas embebidos o reproductores de vídeo, se actualizará esta sección incluyendo: nombre del proveedor, finalidad concreta del servicio y de las cookies que pueda crear, y un enlace/información de contacto del proveedor.
+    </p>
 
     <footer>
       <p>Enlaces útiles: <a href="privacidad.html">Política de Privacidad</a> · <a href="legal.html">Aviso Legal</a></p>
@@ -81,7 +178,7 @@
   </article>
 
   <!-- GALLEGO -->
-  <article id="lang-gl" class="content" lang="gl" style="display:none">
+  <article id="lang-gl" class="content hidden" lang="gl" data-lang="gl">
     <h1>Política de Cookies</h1>
     <p class="section">Esta Política de Cookies explica que son as cookies, para que se utilizan no sitio web da Sociedade Deportiva O'Salgueiro (en diante "o Club") e como podes xestionalas.</p>
 
@@ -102,14 +199,14 @@
     </table>
 
     <h2>3. Cookies de terceiros</h2>
-    <p class="section">Nalgunhas páxinas ou funcionalidades poden cargarse recursos de terceiros (por exemplo, mapas, vídeos ou ferramentas analíticas). Eses terceiros poden establecer as súas propias cookies. O Club non controla esas cookies; consulta as políticas de privacidade dos provedores para máis detalles.</p>
+    <p class="section">Nalgunhas páxinas ou funcionalidades poden cargarse recursos de terceiros (por exemplo, mapas, vídeos ou ferramentas analíticas). Eses terceiros poden estabelecer as súas propias cookies. O Club non controla esas cookies; consulta as políticas de privacidade dos provedores para máis detalles.</p>
 
     <h2>4. Como xestionar ou eliminar cookies?</h2>
     <p class="section">Podes permitir, bloquear ou eliminar as cookies mediante a configuración do teu navegador. Instrucións rápidas para navegadores comúns:</p>
     <ul>
-      <li>Chrome: Configuración > Privacidade e seguridade > Cookies e outros datos de sitios.</li>
-      <li>Safari (macOS): Preferencias > Privacidade > Xestionar datos do sitio web.</li>
-      <li>Firefox: Preferencias > Privacidade & Seguridade > Cookies e datos de sitios.</li>
+      <li>Chrome: Configuración &gt; Privacidade e seguridade &gt; Cookies e outros datos de sitios.</li>
+      <li>Safari (macOS): Preferencias &gt; Privacidade &gt; Xestionar datos do sitio web.</li>
+      <li>Firefox: Preferencias &gt; Privacidade &amp; Seguridade &gt; Cookies e datos de sitios.</li>
     </ul>
     <p class="section">Bloquear cookies pode afectar ao correcto funcionamento do sitio.</p>
 
@@ -128,7 +225,7 @@
   </article>
 
   <!-- ENGLISH -->
-  <article id="lang-en" class="content" lang="en" style="display:none">
+  <article id="lang-en" class="content hidden" lang="en" data-lang="en">
     <h1>Cookie Policy</h1>
     <p class="section">This Cookie Policy explains what cookies are, how Sociedad Deportiva O'Salgueiro (the "Club") uses them on this website and how you can manage them.</p>
 
@@ -154,9 +251,9 @@
     <h2>4. How to manage or delete cookies</h2>
     <p class="section">You can allow, block or delete cookies via your browser settings. Quick guides:</p>
     <ul>
-      <li>Chrome: Settings > Privacy and security > Cookies and other site data.</li>
-      <li>Safari (macOS): Preferences > Privacy > Manage Website Data.</li>
-      <li>Firefox: Preferences > Privacy & Security > Cookies and Site Data.</li>
+      <li>Chrome: Settings &gt; Privacy and security &gt; Cookies and other site data.</li>
+      <li>Safari (macOS): Preferences &gt; Privacy &gt; Manage Website Data.</li>
+      <li>Firefox: Preferences &gt; Privacy &amp; Security &gt; Cookies and Site Data.</li>
     </ul>
     <p class="section">Blocking cookies may affect site functionality.</p>
 
@@ -176,28 +273,40 @@
 </main>
 
 <script>
-  // Mostrar idioma según localStorage 'lang' (usado por app.js) o por atributo <html lang="">
   (function(){
-    const btnEs = document.getElementById('btn-es');
-    const btnGl = document.getElementById('btn-gl');
-    const btnEn = document.getElementById('btn-en');
-    const sections = { es: document.getElementById('lang-es'), gl: document.getElementById('lang-gl'), en: document.getElementById('lang-en') };
-    function setLang(l){
-      Object.keys(sections).forEach(k => sections[k].style.display = (k===l ? '' : 'none'));
-      btnEs.classList.toggle('active', l==='es');
-      btnGl.classList.toggle('active', l==='gl');
-      btnEn.classList.toggle('active', l==='en');
-      try{ localStorage.setItem('lang', l); }catch(e){}
-      document.documentElement.lang = l;
-    }
-    // preferencia: localStorage 'lang' (si la hay), si no usar html[lang] o 'es'
-    const stored = (function(){ try{return localStorage.getItem('lang');}catch(e){return null;} })();
-    const defaultLang = stored || document.documentElement.lang || 'es';
-    setLang(defaultLang);
+    const buttons = Array.from(document.querySelectorAll('.lang-switch button[data-lang]'));
+    const articles = Array.from(document.querySelectorAll('article[data-lang]'));
+    const storageKey = 'lang';
 
-    btnEs.addEventListener('click', ()=>setLang('es'));
-    btnGl.addEventListener('click', ()=>setLang('gl'));
-    btnEn.addEventListener('click', ()=>setLang('en'));
+    function getStored(){
+      try { return localStorage.getItem(storageKey); } catch(e){ return null; }
+    }
+
+    function setStored(lang){
+      try { localStorage.setItem(storageKey, lang); } catch(e){}
+    }
+
+    function setLang(lang){
+      articles.forEach(a => a.classList.toggle('hidden', a.dataset.lang !== lang));
+      buttons.forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false'));
+      document.documentElement.lang = lang;
+      setStored(lang);
+    }
+
+    // initial language: localStorage -> html[lang] -> 'es'
+    const initial = getStored() || document.documentElement.lang || 'es';
+    setLang(initial);
+
+    // events: click + keyboard (Enter/Space)
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => setLang(btn.dataset.lang));
+      btn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          setLang(btn.dataset.lang);
+        }
+      });
+    });
   })();
 </script>
 </body>
