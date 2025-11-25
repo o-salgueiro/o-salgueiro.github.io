@@ -16,7 +16,7 @@ const dict = {
     "fees.title":"Tarifas","fees.membership.title":"Cota familiar de socio/a","fees.membership.text":"","fees.note":"",
     "contact.title":"Contacto","contact.name":"Nome","contact.message":"Mensaxe","contact.send":"Enviar","contact.where":"Onde estamos","contact.map":"Ver en Google Maps","contact.extra":"A 4 km de Betanzos · Horario 24 horas",
     "contact.privacy.accept":"ACEPTO A POLÍTICA DE PRIVACIDADE PARA O TRATAMENTO DOS DADOS PERSONAIS DE ACORDO COA LOPD-DGG 3/2018 E RGPD 679/2016.",
-    "cookie.title":"Uso de cookies","cookie.text":"Usamos cookies propias e de terceiros para mellorar a experiencia do sitio web. Debe aceptar o uso de cookies para continuar navegando.","cookie.accept":"Aceptar","cookie.more":"Más información",
+    "cookie.title":"Uso de cookies","cookie.text":"Usamos cookies propias e de terceiros para mellorar a experiencia do sitio web. Debe aceptar o uso de cookies para continuar navegando.","cookie.accept":"Aceptar","cookie.more":"Máis información",
     "mailto.prompt":"Semella que non hai un cliente de correo predeterminado para \"mailto:\". Quiere abrir Gmail para enviar a mensaxe?",
     "footer.about.title":"Sobre o clube","footer.about.text":"A Sociedade Deportiva O'Salgueiro é un club familiar con instalacións para tenis, pádel e natación, nunha paisaxe de beleza singular e en plena natureza.","footer.links.title":"Ligazóns","footer.legal.title":"Legal","footer.legal.legal":"Aviso Legal","footer.legal.privacy":"Política de Privacidade","footer.legal.cookies":"Política de Cookies",
     "club.title":"Sociedade Deportiva O'Salgueiro","club.p1":"A Sociedade Deportiva O'Salgueiro é un club deportivo de carácter familiar con estupendas instalacións para a práctica do tenis, pádel e natación, actividades que poden realizar persoas de todas as idades e é unha maneira de facer deporte e tamén divertirse.","club.p2":"Sitúase nunha paisaxe de beleza singular e con integración en plena natureza, o que fai que a práctica de deporte sexa máis placenteira.","club.p3":"Vén e coñece o Club da Sociedade Deportiva O'Salgueiro, onde poderás gozar do teu deporte favorito.",
@@ -33,7 +33,7 @@ const dict = {
     "history.p2":"Aquella cancha del principio, con el paso de los años, fue evolucionando al actual conjunto de instalaciones que enriquecen los servicios que presta la Sociedad Deportiva a sus socios.",
     "history.p3":"O'Salgueiro ha mantenido a lo largo de estos años una gran presencia en el mundo de la competición del tenis gallego.",
     "history.p4":"Entre sus socios se encuentran, desde hace años y en la actualidad, campeones de Galicia, campeones de España y campeones de Europa en diversas categorías de veteranos, tanto en la modalidad de individuales como de dobles.",
-    "fac.title":"Instalaciones","fac.p1":"Tres pistas de tenis quick, dos de ellas con iluminación artificial.","fac.p2":"Pista de pádel de hierba sintética con iluminación artificial.","fac.p3":"Campo de fútbol 7 de hierba natural.","fac.p4":"Magnífica piscina de 12 x 6 m dotada de las últimas tecnologías y con solárium de hierba natural.","fac.p5":"Pérgola con capacidad para 25 personas y tres parrillas a disposición de los socios.","fac.p6":"Sala de tecnificación.",
+    "fac.title":"Instalaciones","fac.p1":"Tres pistas de tenis quick, dos de ellas con iluminación artificial.","fac.p2":"Pista de pádel de hierba sintética con iluminación artificial.","fac.p3":"Campo de fútbol 7 de hierba natural.","fac.p4":"Magnífica piscina de 12 x 6 m dotada de las últimas tecnologías y con solárium de herba natural.","fac.p5":"Pérgola con capacidad para 25 personas y tres parrillas a disposición de los socios.","fac.p6":"Sala de tecnificación.",
     "fac.techroom":"Sala de tecnificación.","fac.gym":"Gimnasio.","fac.sauna":"Sauna.","fac.lockers":"Vestuarios femeninos y masculinos.","fac.lounge":"Salón de TV y juegos de mesa.","fac.pingpong":"Tenis de mesa.","fac.billiards":"Mesa de billar francés.",
     "news.title":"Noticias",
     "fees.title":"Tarifas","fees.membership.title":"Cuota familiar de socio","fees.membership.text":"","fees.note":"",
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
     window.scrollTo({top:0,behavior:'instant'});
   }
-  const initial=(location.hash.replace('#',''))||localStorage.getItem('last_tab')||'inicio';
+  const initial = (location.hash.replace('#','')) || 'inicio';
   showSection(initial);
   window.addEventListener('hashchange', ()=>showSection(location.hash.replace('#','')||'inicio'));
 
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const a = e.target.closest && e.target.closest('a');
     if(!a) return;
     const href = a.getAttribute('href') || '';
-    if(href.includes('/cookies') || href.includes('cookies')) return;
+    if(href.includes('cookies') || href.includes('/cookies.html') || href.includes('cookies.html')) return;
     if(localStorage.getItem(COOKIE_KEY) !== 'accepted'){
       e.preventDefault();
       if(cookieEl) cookieEl.classList.remove('hidden');
