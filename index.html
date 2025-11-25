@@ -38,6 +38,14 @@ footer{background:#0e0f0f;color:#e9f4ef;margin-top:2rem} footer a{color:#e9f4ef}
 .lightbox img{max-width:95vw;max-height:95vh;object-fit:contain;border-radius:.5rem;border:1px solid #333}
 .lightbox.show{display:flex}.lightbox-close{position:fixed;top:12px;right:16px;font-size:32px;line-height:1;border:none;background:transparent;color:#fff;cursor:pointer}
 .hidden{display:none}
+
+/* cookie banner y bloqueo sencillo */
+.cookie-consent{position:fixed;left:16px;right:16px;bottom:18px;margin:0 auto;max-width:1100px;background:#fff;border-radius:.6rem;border:1px solid #ddd;padding:1rem;z-index:1100;box-shadow:0 6px 24px rgba(0,0,0,.12);display:flex;align-items:center;justify-content:space-between}
+.cookie-consent.hidden{display:none}
+.cookie-inner p{margin:.25rem 0;color:#333}
+/* bloqueo de interacción mientras no se aceptan cookies */
+body[data-cookie="required"]{pointer-events:none}
+body[data-cookie="required"] header, body[data-cookie="required"] .cookie-consent{pointer-events:auto}
 </style>
 <script>try{if(!localStorage.getItem('lang')) localStorage.setItem('lang','es');}catch(e){}</script>
 </head>
@@ -121,7 +129,7 @@ footer{background:#0e0f0f;color:#e9f4ef;margin-top:2rem} footer a{color:#e9f4ef}
       <img src="assets/IMGP2957.JPG" alt="Foto club 2">
       <img src="assets/IMGP2961.JPG" alt="Foto club 3">
       <img src="assets/IMGP2963.JPG" alt="Foto club 4">
-      <img src="assets/IMGP2967.JPG" alt="Foto club 5"∫>
+      <img src="assets/IMGP2967.JPG" alt="Foto club 5">
       <img src="assets/IMGP2974.JPG" alt="Foto club 6">
       <img src="assets/IMGP2980.JPG" alt="Foto club 7">
       <img src="assets/IMGP2981.JPG" alt="Foto club 8">
@@ -204,6 +212,7 @@ footer{background:#0e0f0f;color:#e9f4ef;margin-top:2rem} footer a{color:#e9f4ef}
   <div class="container">
     <h2 data-i18n="news.title">Noticias</h2>
     <div class="grid-3" id="news-list">
+      <!-- vacío: contenidos de noticias se completarán cuando haya novedades -->
     </div>
   </div>
 </section>
@@ -233,6 +242,13 @@ footer{background:#0e0f0f;color:#e9f4ef;margin-top:2rem} footer a{color:#e9f4ef}
             <input id="cf-email" name="email" type="email" required style="width:100%;padding:.7rem;border:1px solid #ddd;border-radius:.6rem;margin:.3rem 0"></label>
           <label><span data-i18n="contact.message">Mensaje</span><br>
             <textarea id="cf-message" name="message" required rows="5" style="width:100%;padding:.7rem;border:1px solid #ddd;border-radius:.6rem;margin:.3rem 0"></textarea></label>
+
+          <!-- checkbox obligatorio para privacidad -->
+          <label style="display:block;margin-top:.5rem;">
+            <input id="cf-privacy" type="checkbox" style="margin-right:.5rem" required>
+            <span data-i18n="contact.privacy.accept">ACEPTO LA POLÍTICA DE PRIVACIDAD PARA EL TRATAMIENTO DE LOS DATOS PERSONALES DE ACUERDO CON LA LOPD-DGG 3/2018 y RGPD 679/2016.</span>
+          </label>
+
           <button class="btn" type="submit" data-i18n="contact.send">Enviar</button>
           <p style="color:var(--muted);margin:.5rem 0 0">O envíanos un correo directo: <a href="mailto:salgueiropaderne@gmail.com">salgueiropaderne@gmail.com</a></p>
           <div class="email-buttons" style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem">
@@ -301,6 +317,18 @@ footer{background:#0e0f0f;color:#e9f4ef;margin-top:2rem} footer a{color:#e9f4ef}
 </footer>
 
 <div class="lightbox" id="lightbox"><button class="lightbox-close" aria-label="Cerrar">×</button><img alt="ampliada"></div>
+
+<!-- cookie consent banner -->
+<div id="cookie-consent" class="cookie-consent hidden" role="dialog" aria-live="polite" aria-label="Cookies">
+  <div class="cookie-inner">
+    <p><strong data-i18n="cookie.title">Uso de cookies</strong></p>
+    <p data-i18n="cookie.text">Utilizamos cookies propias y de terceros para mejorar la experiencia del sitio web. Para continuar navegando debe aceptar el uso de cookies.</p>
+  </div>
+  <div style="display:flex;gap:.5rem;margin-left:1rem">
+    <a href="/cookies" class="btn secondary cookie-allow" target="_blank" rel="noopener" data-i18n="cookie.more">Más información</a>
+    <button id="cookie-accept" class="btn" aria-label="Aceptar cookies" data-i18n="cookie.accept">Aceptar</button>
+  </div>
+</div>
 
 <script src="i18n.js"></script>
 <script src="app.js"></script>

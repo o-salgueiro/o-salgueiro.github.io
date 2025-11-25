@@ -1,52 +1,17 @@
 <!DOCTYPE html>
-<html lang="gl">
+<html lang="es">
 <head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title data-i18n="page.title">Política de Cookies – Club O Salgueiro</title>
-<style>
-  :root{ --primary:#0b8457; --ring:rgba(11,132,87,.25) }
-  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Helvetica,Arial,sans-serif;background:#fafafa;color:#1b1b1b}
-  .container{max-width:900px;margin:0 auto;padding:0 1rem}
-  header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee}
-  .nav{display:flex;justify-content:space-between;align-items:center;height:64px}
-  .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:inherit}
-  .logo{width:36px;height:36px;border-radius:50%;background:#0b8457;display:grid;place-items:center;color:#fff;font-weight:800}
-  .lang button{border:1px solid #ddd;background:#fff;padding:.35rem .55rem;border-radius:.5rem;cursor:pointer}
-  .lang button.active{border-color:#0b8457;box-shadow:0 0 0 3px var(--ring)}
-  .card{background:#fff;border:1px solid #eee;border-radius:1rem;padding:1.25rem;box-shadow:0 6px 18px rgba(0,0,0,.04)}
-  footer{background:#0e0f0f;color:#e9f4ef;margin-top:2rem} footer a{color:#e9f4ef}
-</style>
+<title>Política de Cookies – Club O Salgueiro</title>
 </head>
 <body>
-<header><div class="container nav">
-  <a class="brand" href="index.html#inicio"><span class="logo">🎾</span><span data-i18n="site.brand">Club O Salgueiro</span></a>
-  <div class="lang"><button data-lang="gl" class="active" aria-pressed="true">GL</button><button data-lang="es">ES</button><button data-lang="en">EN</button></div>
-</div></header>
+<header><div class="container nav"></div></header>
 <main class="container" style="padding:2rem 0">
-  <h1 id="ttl">Política de Cookies</h1>
-  <div class="card" id="content">
-    <p>Este sitio emprega unicamente cookies técnicas imprescindibles para o seu funcionamento básico. Se no futuro se incorporan cookies de analítica ou de terceiros, solicitarase consentimento previo e ofrecerase configuración detallada.</p>
-  </div>
+  <h1>Política / Guía de Cookies</h1>
+  <p>Coloca el PDF informativo en <code>assets/docs/guia_cookies.pdf</code> para incrustarlo aquí.</p>
+  <object data="assets/docs/guia_cookies.pdf" type="application/pdf" width="100%" height="800">
+    No se puede mostrar el PDF — <a href="assets/docs/guia_cookies.pdf" download>descargar guía cookies</a>
+  </object>
 </main>
-<footer><div class="container" style="padding:2rem 0">
-  <a href="index.html#inicio" style="color:#e9f4ef">← Volver á portada</a>
-  <p style="margin-top:1rem;color:#cfeede">© <span id="year"></span> Club O Salgueiro</p>
-</div></footer>
-<script>
-const dict={
-  gl:{'page.title':'Política de Cookies – Club O Salgueiro','h1':'Política de Cookies','body':`<p>Este sitio emprega unicamente cookies técnicas imprescindibles para o seu funcionamento básico. Se no futuro se incorporan cookies de analítica ou de terceiros, solicitarase consentimento previo e ofrecerase configuración detallada.</p>`,'site.brand':'Club O Salgueiro'},
-  es:{'page.title':'Política de Cookies – Club O Salgueiro','h1':'Política de Cookies','body':`<p>Este sitio utiliza únicamente cookies técnicas imprescindibles para su funcionamiento básico. Si en el futuro se incorporan cookies de analítica o de terceros, se solicitará consentimiento previo y se ofrecerá una configuración detallada.</p>`,'site.brand':'Club O Salgueiro'},
-  en:{'page.title':'Cookie Policy – Club O Salgueiro','h1':'Cookie Policy','body':`<p>This website uses only essential technical cookies required for basic operation. If analytics or third-party cookies are added in the future, prior consent will be requested and detailed settings will be provided.</p>`,'site.brand':'Club O Salgueiro'}
-};
-function applyLang(l){
-  const s=dict[l]||dict.gl; document.documentElement.lang=l; document.title=s['page.title']||document.title;
-  document.getElementById('ttl').textContent=s['h1']||''; document.getElementById('content').innerHTML=s['body']||'';
-  document.querySelectorAll('.lang button').forEach(b=>{const a=b.getAttribute('data-lang')===l; b.classList.toggle('active',a); b.setAttribute('aria-pressed', a?'true':'false');});
-  localStorage.setItem('lang', l);
-}
-document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>applyLang(b.getAttribute('data-lang'))));
-document.getElementById('year').textContent=new Date().getFullYear();
-applyLang(localStorage.getItem('lang')||'gl');
-</script>
 </body>
 </html>

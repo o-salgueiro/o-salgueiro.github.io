@@ -12,9 +12,11 @@ const dict = {
     "history.p4":"Entre os seus socios atópanse, desde hai anos e na actualidade, campións de Galicia, campións de España e campións de Europa en diversas categorías de veteranos, tanto en individuais como en dobres.",
     "fac.title":"Instalacións","fac.p1":"Tres pistas de tenis quick, dúas delas con iluminación artificial.","fac.p2":"Pista de pádel de herba sintética con iluminación artificial.","fac.p3":"Campo de fútbol 7 de herba natural.","fac.p4":"Magnífica piscina de 12 x 6 m. dotada das últimas tecnoloxías e con solario de herba natural.","fac.p5":"Pérgola con capacidade para 25 persoas e tres grellas á disposición dos socios.","fac.p6":"Sala de tecnificación.",
     "fac.techroom":"Sala de tecnificación.","fac.gym":"Ximnasio.","fac.sauna":"Sauna.","fac.lockers":"Vestiarios femininos e masculinos.","fac.lounge":"Salón de TV e xogos de mesa.","fac.pingpong":"Tenis de mesa.","fac.billiards":"Mesa de billar francés.",
-    "news.title":"Novas","news.item1.title":"Liga interna 2026","news.item1.text":"Aberta a inscrición para a nova tempada. Categorías por niveis.","news.item2.title":"Campamento de verán","news.item2.text":"Escola intensiva para nenos e nenas en xullo e agosto.","news.item3.title":"Clínic con xogadores locais","news.item3.text":"Sesión especial con adestradores convidados.",
-    "fees.title":"Tarifas","fees.membership.title":"Cota familiar de socio/a","fees.membership.text":"Acceso ao clube, descontos en clases e reservas preferentes.","fees.note":"Primeiro día de proba gratis. Escríbenos para reservar data.",
+    "news.title":"Novas",
+    "fees.title":"Tarifas","fees.membership.title":"Cota familiar de socio/a","fees.membership.text":"","fees.note":"",
     "contact.title":"Contacto","contact.name":"Nome","contact.message":"Mensaxe","contact.send":"Enviar","contact.where":"Onde estamos","contact.map":"Ver en Google Maps","contact.extra":"A 4 km de Betanzos · Horario 24 horas",
+    "contact.privacy.accept":"ACEPTO A POLÍTICA DE PRIVACIDADE PARA O TRATAMENTO DOS DADOS PERSONAIS DE ACORDO COA LOPD-DGG 3/2018 E RGPD 679/2016.",
+    "cookie.title":"Uso de cookies","cookie.text":"Usamos cookies propias e de terceiros para mellorar a experiencia do sitio web. Debe aceptar o uso de cookies para continuar navegando.","cookie.accept":"Aceptar","cookie.more":"Más información",
     "mailto.prompt":"Semella que non hai un cliente de correo predeterminado para \"mailto:\". Quiere abrir Gmail para enviar a mensaxe?",
     "footer.about.title":"Sobre o clube","footer.about.text":"A Sociedade Deportiva O'Salgueiro é un club familiar con instalacións para tenis, pádel e natación, nunha paisaxe de beleza singular e en plena natureza.","footer.links.title":"Ligazóns","footer.legal.title":"Legal","footer.legal.legal":"Aviso Legal","footer.legal.privacy":"Política de Privacidade","footer.legal.cookies":"Política de Cookies",
     "club.title":"Sociedade Deportiva O'Salgueiro","club.p1":"A Sociedade Deportiva O'Salgueiro é un club deportivo de carácter familiar con estupendas instalacións para a práctica do tenis, pádel e natación, actividades que poden realizar persoas de todas as idades e é unha maneira de facer deporte e tamén divertirse.","club.p2":"Sitúase nunha paisaxe de beleza singular e con integración en plena natureza, o que fai que a práctica de deporte sexa máis placenteira.","club.p3":"Vén e coñece o Club da Sociedade Deportiva O'Salgueiro, onde poderás gozar do teu deporte favorito.",
@@ -33,9 +35,11 @@ const dict = {
     "history.p4":"Entre sus socios se encuentran, desde hace años y en la actualidad, campeones de Galicia, campeones de España y campeones de Europa en diversas categorías de veteranos, tanto en la modalidad de individuales como de dobles.",
     "fac.title":"Instalaciones","fac.p1":"Tres pistas de tenis quick, dos de ellas con iluminación artificial.","fac.p2":"Pista de pádel de hierba sintética con iluminación artificial.","fac.p3":"Campo de fútbol 7 de hierba natural.","fac.p4":"Magnífica piscina de 12 x 6 m dotada de las últimas tecnologías y con solárium de hierba natural.","fac.p5":"Pérgola con capacidad para 25 personas y tres parrillas a disposición de los socios.","fac.p6":"Sala de tecnificación.",
     "fac.techroom":"Sala de tecnificación.","fac.gym":"Gimnasio.","fac.sauna":"Sauna.","fac.lockers":"Vestuarios femeninos y masculinos.","fac.lounge":"Salón de TV y juegos de mesa.","fac.pingpong":"Tenis de mesa.","fac.billiards":"Mesa de billar francés.",
-    "news.title":"Noticias","news.item1.title":"Liga interna 2026","news.item1.text":"Abierta la inscripción para la nueva temporada. Categorías por niveles.","news.item2.title":"Campamento de verano","news.item2.text":"Escuela intensiva para niños y niñas en julio y agosto.","news.item3.title":"Clínic con jugadores locales","news.item3.text":"Sesión especial con entrenadores invitados.",
-    "fees.title":"Tarifas","fees.membership.title":"Cuota familiar de socio","fees.membership.text":"Acceso al club, descuentos en clases y reservas preferentes.","fees.note":"Primer día de prueba gratis. Escríbenos para reservar fecha.",
+    "news.title":"Noticias",
+    "fees.title":"Tarifas","fees.membership.title":"Cuota familiar de socio","fees.membership.text":"","fees.note":"",
     "contact.title":"Contacto","contact.name":"Nombre","contact.message":"Mensaje","contact.send":"Enviar","contact.where":"Dónde estamos","contact.map":"Ver en Google Maps","contact.extra":"A 4 km de Betanzos · Horario 24 horas",
+    "contact.privacy.accept":"ACEPTO LA POLÍTICA DE PRIVACIDAD PARA EL TRATAMIENTO DE LOS DATOS PERSONALES DE ACUERDO CON LA LOPD-DGG 3/2018 y RGPD 679/2016.",
+    "cookie.title":"Uso de cookies","cookie.text":"Utilizamos cookies propias y de terceros para mejorar la experiencia del sitio web. Para continuar navegando debe aceptar el uso de cookies.","cookie.accept":"Aceptar","cookie.more":"Más información",
     "mailto.prompt":"Parece que no hay una aplicación de correo predeterminada para \"mailto:\". ¿Quieres abrir Gmail para enviar el mensaje?",
     "footer.about.title":"Sobre el club","footer.about.text":"La Sociedad Deportiva O'Salgueiro es un club familiar con instalaciones para tenis, pádel y natación, en un paisaje de gran belleza y plena naturaleza.","footer.links.title":"Enlaces","footer.legal.title":"Legal","footer.legal.legal":"Aviso Legal","footer.legal.privacy":"Política de Privacidad","footer.legal.cookies":"Política de Cookies",
     "club.title":"Sociedad Deportiva O'Salgueiro","club.p1":"La Sociedad Deportiva O'Salgueiro es un club deportivo de carácter familiar con estupendas instalaciones para la práctica del tenis, pádel y natación, actividades que pueden realizar personas de todas las edades y que son una manera de hacer deporte y también divertirse.","club.p2":"Se sitúa en un paisaje de gran belleza e integrada en plena naturaleza, lo que hace que la práctica del deporte sea más placentera.","club.p3":"Ven y conoce el Club de la Sociedad Deportiva O'Salgueiro, donde podrás disfrutar de tu deporte favorito.",
@@ -54,9 +58,11 @@ const dict = {
     "history.p4":"Among its members, both in the past and today, there are champions of Galicia, Spain and Europe in various veterans' categories, in both singles and doubles.",
     "fac.title":"Facilities","fac.p1":"Three quick tennis courts, two with floodlights.","fac.p2":"Synthetic-grass padel court with floodlights.","fac.p3":"7-a-side football pitch with natural grass.","fac.p4":"Superb 12×6 m pool with the latest technology and a natural-grass solarium.","fac.p5":"Pergola for 25 people and three barbecues for members to use.","fac.p6":"High-performance training room.",
     "fac.techroom":"High-performance training room.","fac.gym":"Gym.","fac.sauna":"Sauna.","fac.lockers":"Women's and men's locker rooms.","fac.lounge":"TV lounge and board games.","fac.pingpong":"Table tennis.","fac.billiards":"French billiards table.",
-    "news.title":"News","news.item1.title":"In-house league 2026","news.item1.text":"Registration open for the new season. Skill-based categories.","news.item2.title":"Summer camp","news.item2.text":"Intensive kids program in July and August.","news.item3.title":"Clinic with local players","news.item3.text":"Special session with guest coaches.",
-    "fees.title":"Fees","fees.membership.title":"Family membership","fees.membership.text":"Club access, lesson discounts and priority bookings.","fees.note":"First trial day free. Contact us to book a date.",
+    "news.title":"News",
+    "fees.title":"Fees","fees.membership.title":"Family membership","fees.membership.text":"","fees.note":"",
     "contact.title":"Contact","contact.name":"Name","contact.message":"Message","contact.send":"Send","contact.where":"Where we are","contact.map":"View on Google Maps","contact.extra":"4 km from Betanzos · Open 24h",
+    "contact.privacy.accept":"I ACCEPT THE PRIVACY POLICY FOR THE PROCESSING OF PERSONAL DATA IN ACCORDANCE WITH LOPD-DGG 3/2018 AND GDPR 679/2016.",
+    "cookie.title":"Cookie usage","cookie.text":"We use our and third-party cookies to improve the site experience. You must accept cookies to keep browsing.","cookie.accept":"Accept","cookie.more":"More info",
     "mailto.prompt":"It seems there is no default mail app for \"mailto:\". Do you want to open Gmail to send the message?",
     "footer.about.title":"About the club","footer.about.text":"Sociedad Deportiva O'Salgueiro is a family-friendly club with tennis, padel and swimming facilities, set in beautiful natural surroundings.","footer.links.title":"Links","footer.legal.title":"Legal","footer.legal.legal":"Legal Notice","footer.legal.privacy":"Privacy Policy","footer.legal.cookies":"Cookie Policy",
     "club.title":"Sociedad Deportiva O'Salgueiro","club.p1":"Sociedad Deportiva O'Salgueiro is a family-friendly sports club with excellent facilities for tennis, padel and swimming — activities for all ages and a way to keep fit while having fun.","club.p2":"It is set in beautiful surroundings and fully integrated with nature, making sports practice even more enjoyable.","club.p3":"Come and discover the Sociedad Deportiva O'Salgueiro Club, where you can enjoy your favourite sport.",
@@ -127,31 +133,88 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
   // Lightbox
   const lb=document.getElementById('lightbox');
-  const lbImg=lb.querySelector('img');
-  const closeBtn=lb.querySelector('.lightbox-close');
-  function openLB(src){ lbImg.src=src; lb.classList.add('show'); }
-  function closeLB(){ lb.classList.remove('show'); lbImg.removeAttribute('src'); }
+  const lbImg=lb ? lb.querySelector('img') : null;
+  const closeBtn=lb ? lb.querySelector('.lightbox-close') : null;
+  function openLB(src){ if(lbImg){ lbImg.src=src; } if(lb) lb.classList.add('show'); }
+  function closeLB(){ if(lb) lb.classList.remove('show'); if(lbImg) lbImg.removeAttribute('src'); }
   function bindGallery(id){
     const g=document.getElementById(id);
-    if(g) g.addEventListener('click',e=>{ if(e.target.tagName==='IMG') openLB(e.target.src); });
+    if(g) g.addEventListener('click',e=>{ if(e.target && e.target.tagName==='IMG') openLB(e.target.src); });
   }
   bindGallery('gallery'); bindGallery('gallery-instalacions');
-  lb.addEventListener('click',e=>{ if(e.target===lb) closeLB(); });
+  if(lb) lb.addEventListener('click',e=>{ if(e.target===lb) closeLB(); });
   if(closeBtn) closeBtn.addEventListener('click', closeLB);
   document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeLB(); });
 
-  // Mailto
+  // COOKIE CONSENT: bloqueo ligero hasta aceptar
+  const COOKIE_KEY = 'os_cookie_consent';
+  const cookieEl = document.getElementById('cookie-consent');
+  const cookieAcceptBtn = document.getElementById('cookie-accept');
+
+  function showCookie(){ if(cookieEl) cookieEl.classList.remove('hidden'); document.body.setAttribute('data-cookie','required'); }
+  function hideCookie(){ if(cookieEl) cookieEl.classList.add('hidden'); document.body.removeAttribute('data-cookie'); }
+
+  try{
+    const stored = localStorage.getItem(COOKIE_KEY);
+    if(stored === 'accepted'){
+      hideCookie();
+    }else{
+      showCookie();
+    }
+  }catch(e){ showCookie(); }
+
+  if(cookieAcceptBtn){
+    cookieAcceptBtn.addEventListener('click', () => {
+      try{ localStorage.setItem(COOKIE_KEY,'accepted'); }catch(e){}
+      hideCookie();
+    });
+  }
+
+  // Evitar navegación hasta aceptar cookies (salvo enlaces a la página de cookies)
+  document.addEventListener('click', (e)=>{
+    const a = e.target.closest && e.target.closest('a');
+    if(!a) return;
+    const href = a.getAttribute('href') || '';
+    if(href.includes('/cookies') || href.includes('cookies')) return;
+    if(localStorage.getItem(COOKIE_KEY) !== 'accepted'){
+      e.preventDefault();
+      if(cookieEl) cookieEl.classList.remove('hidden');
+      window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'});
+    }
+  }, true);
+
+  // Mailto + validación checkbox privacidad + cookies
   window.sendMailto = function(e){
     e.preventDefault();
-    const name=document.getElementById('cf-name').value.trim();
-    const email=document.getElementById('cf-email').value.trim();
-    const msg=document.getElementById('cf-message').value.trim();
-    if(!name || !email || !msg){ return false; }
+    const name=document.getElementById('cf-name') ? document.getElementById('cf-name').value.trim() : '';
+    const email=document.getElementById('cf-email') ? document.getElementById('cf-email').value.trim() : '';
+    const msg=document.getElementById('cf-message') ? document.getElementById('cf-message').value.trim() : '';
+    const privacyChecked = document.getElementById('cf-privacy') ? document.getElementById('cf-privacy').checked : false;
+
+    if(!name || !email || !msg){
+      alert((document.documentElement.lang || 'es') === 'en' ? 'Please complete all required fields.' : (document.documentElement.lang || 'es') === 'gl' ? 'Completa todos os campos obrigatorios.' : 'Por favor completa todos los campos obligatorios.');
+      return false;
+    }
+
+    if(!privacyChecked){
+      alert((document.documentElement.lang || 'es') === 'en' ? 'You must accept the privacy policy to send.' : (document.documentElement.lang || 'es') === 'gl' ? 'Debe aceptar a política de privacidade para enviar.' : 'Debe aceptar la política de privacidad para enviar.');
+      return false;
+    }
+
+    if(localStorage.getItem(COOKIE_KEY) !== 'accepted'){
+      if(cookieEl) cookieEl.classList.remove('hidden');
+      alert((document.documentElement.lang || 'es') === 'en' ? 'You must accept cookies before continuing.' : (document.documentElement.lang || 'es') === 'gl' ? 'Debe aceptar as cookies antes de continuar.' : 'Debe aceptar las cookies antes de continuar.');
+      return false;
+    }
+
     const subject=encodeURIComponent(`Contacto web – ${name}`);
     const body=encodeURIComponent(`Nome: ${name}\nEmail: ${email}\n\nMensaxe:\n${msg}`);
     const mail=`mailto:salgueiropaderne@gmail.com?subject=${subject}&body=${body}`;
-    const a=document.getElementById('mailto-hidden'); a.setAttribute('href', mail); a.click();
+    const a=document.getElementById('mailto-hidden');
+    if(a){ a.setAttribute('href', mail); a.click(); }
+
     try{ window.location.assign(mail); }catch(_){}
+
     setTimeout(()=>{
       if (!document.hasFocus()) return;
       const lang=(document.documentElement.lang||'es');
@@ -162,8 +225,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
         window.open(url, '_blank', 'noopener');
       }
     }, 300);
+
     return false;
   };
 
+  // set year
   const y=document.getElementById('year'); if(y) y.textContent = new Date().getFullYear();
 });
