@@ -171,19 +171,32 @@
     en: document.getElementById('lang-en')
   };
   const storageKey = 'lang';
+
   function getStored(){ try{ return localStorage.getItem(storageKey); }catch(e){ return null; } }
   function setStored(l){ try{ localStorage.setItem(storageKey,l); }catch(e){} }
+
   function setLang(l){
-    Object.keys(articles).forEach(k => { articles[k].style.display = (k===l ? 'block' : 'none'); });
-    document.querySelectorAll('.lang-switch button').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang===l ? 'true' : 'false'));
+    // usar clase .hidden (no conflict con !important)
+    Object.keys(articles).forEach(k => {
+      if (!articles[k]) return;
+      articles[k].classList.toggle('hidden', k !== l);
+    });
+    // actualizar botones
+    buttons.forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === l ? 'true' : 'false'));
     document.documentElement.lang = l;
     setStored(l);
   }
+
+  // inicial: localStorage -> html[lang] -> 'gl'
   const initial = getStored() || document.documentElement.lang || 'gl';
   setLang(initial);
-  document.querySelectorAll('.lang-switch button').forEach(btn=>{
+
+  // eventos
+  buttons.forEach(btn=>{
     btn.addEventListener('click', ()=> setLang(btn.dataset.lang));
-    btn.addEventListener('keydown', e => { if(e.key==='Enter' || e.key===' ') { e.preventDefault(); setLang(btn.dataset.lang); }});
+    btn.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setLang(btn.dataset.lang); }
+    });
   });
 })();
 </script>
