@@ -5,13 +5,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Política de Privacidad – Club O Salgueiro</title>
 <style>
-  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;margin:0;background:#fff;color:#111}
-  .container{max-width:900px;margin:2rem auto;padding:0 1rem}
+  :root{ --text:#1b1b1b; --accent:#0b8457; --muted:#666; --bg:#fff; --border:#e6e6e6; --gap:1rem; --container:900px; }
+  html,body{height:100%}
+  body{
+    font-family: system-ui,-apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin:0;
+    color:var(--text);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+  }
+  .container{
+    max-width:var(--container);
+    margin:2rem auto;
+    padding:0 1rem;
+  }
   header .nav{height:64px}
-  .lang-switch{display:flex;gap:.5rem;margin-bottom:1rem}
-  .lang-switch button{padding:.35rem .6rem;border:1px solid #ddd;background:#fff;border-radius:.4rem;cursor:pointer}
-  .lang-switch button[aria-pressed="true"]{border-color:#0b8457;background:#eaf7ee}
+  h1,h2{color:var(--accent);margin-top:0}
+  .lang-switch{
+    display:flex;
+    gap:.5rem;
+    margin-bottom:1rem;
+    align-items:center;
+  }
+  .lang-switch button{
+    padding:.35rem .6rem;
+    border-radius:.4rem;
+    border:1px solid #ddd;
+    background:#fff;
+    cursor:pointer;
+    font-weight:600;
+  }
+  .lang-switch button[aria-pressed="true"]{
+    border-color:var(--accent);
+    background:#eaf7ee;
+  }
   .content{margin-top:1rem}
+  .section{margin-bottom:.75rem}
+  table{width:100%;border-collapse:collapse;margin:1rem 0;display:block;overflow:auto}
+  th,td{border:1px solid var(--border);padding:.6rem;text-align:left}
+  footer{margin-top:2rem;color:var(--muted);font-size:.9rem}
+  /* utility */
+  .hidden{display:none !important}
+  .sr-only{
+    position:absolute;
+    width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+  }
 </style>
 </head>
 <body>
