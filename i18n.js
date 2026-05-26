@@ -60,7 +60,7 @@ const dict = {
     "fac.techroom":"High-performance training room.","fac.gym":"Gym.","fac.sauna":"Sauna.","fac.lockers":"Women's and men's locker rooms.","fac.lounge":"TV lounge and board games.","fac.pingpong":"Table tennis.","fac.billiards":"French billiards table.",
     "fees.title":"Fees","fees.membership.title":"Family membership","fees.membership.text":"30€ / month","fees.note":"",
     "news.title":"News","news.item1.title":"In-house league 2026","news.item1.text":"Registration open for the new season. Skill-based categories.","news.item2.title":"Summer camp","news.item2.text":"Intensive kids program in July and August.","news.item3.title":"Clinic with local players","news.item3.text":"Special session with guest coaches.",
-    "contact.title":"Contact","contact.name":"Name","contact.message":"Message","contact.send":"Send","contact.where":"Where we are","contact.map":"View on Google Maps","contact.extra":"4 km from Betanzos · Open 24h",
+    "contact.title":"Contact","contact.name":"Name","contact.message":"Message","contact.send":"Send","contact.where":"Where we are","contact.phone":"Phone","contact.map":"View on Google Maps","contact.extra":"4 km from Betanzos · Open 24h",
     "contact.privacy.accept":"I ACCEPT THE PRIVACY POLICY FOR THE PROCESSING OF PERSONAL DATA IN ACCORDANCE WITH LOPD-DGG 3/2018 AND GDPR 679/2016.",
     "cookie.title":"Cookie usage","cookie.text":"We use our and third-party cookies to improve the site experience. You must accept cookies to keep browsing.","cookie.accept":"Accept","cookie.more":"More info",
     "mailto.prompt":"It seems there is no default mail app for \"mailto:\". Do you want to open Gmail to send the message?",
