@@ -75,7 +75,7 @@ function applyLang(lang){
   document.documentElement.lang = lang;
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-    if (strings[key]) el.textContent = strings[key];
+   if (strings[key] !== undefined) el.textContent = strings[key];
   });
   document.title = strings['site.title'] || document.title;
   document.querySelectorAll('.lang button').forEach(btn => {
