@@ -97,10 +97,3 @@ if (typeof window !== 'undefined') {
   window.initLang = initLang;
   try{ if(document && document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initLang); else initLang(); }catch(e){}
 }
-```// filepath: /Users/luciaalvarez/Documents/GitHub/O-Salgueiro/i18n.js
-// Diccionario i18n y funciones de manejo de idioma
-const dict = {
-  gl: {
-    "site.title":"Club O Salgueiro – Tenis","site.brand":"Sociedad Deportiva O Salgueiro",
-    "nav.tennis":"Tenis","nav.activities":"Actividades","nav.history":"Historia","nav.facilities":"Instalacións","nav.news":"Novas","nav.fees":"Tarifas","nav.contact":"Contacto",
-    "hero.tag":"Tenis como actividade principal","hero.title":"O teu club de tenis na Coruña","hero.subtitle":"Benvidos á Sociedade Deportiva O'Salgueiro: club familiar para practicar tenis, pádel e
