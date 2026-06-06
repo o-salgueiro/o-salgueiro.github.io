@@ -77,7 +77,7 @@ function applyLang(lang){
     const key = el.getAttribute('data-i18n');
     if (strings[key]) el.textContent = strings[key];
   });
-  document.title = strings['site.title'] || document.title;
+  document.title = strings['site.title'] || dict.es['site.title'];
   document.querySelectorAll('.lang button').forEach(btn => {
     const active = btn.getAttribute('data-lang') === lang;
     btn.classList.toggle('active', active);
