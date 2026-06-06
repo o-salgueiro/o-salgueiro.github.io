@@ -1,5 +1,5 @@
 // Diccionario i18n y funciones de manejo de idioma
-const dict = {
+window.dict = {
   gl: {
     "site.title":"Sociedad Deportiva O Salgueiro | Tenis, Pádel e Piscina en Paderne (A Coruña)","site.brand":"Sociedad Deportiva O Salgueiro",
     "nav.tennis":"Tenis","nav.activities":"Actividades","nav.history":"Historia","nav.facilities":"Instalacións","nav.news":"Novas","nav.fees":"Tarifas","nav.contact":"Contacto",
