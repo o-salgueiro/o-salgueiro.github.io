@@ -1,7 +1,7 @@
 // Diccionario i18n y funciones de manejo de idioma
 const dict = {
   gl: {
-    "site.title":"Club O Salgueiro – Tenis","site.brand":"Sociedad Deportiva O Salgueiro",
+    "site.title":"Sociedad Deportiva O Salgueiro | Tenis, Pádel e Piscina en Paderne (A Coruña)","site.brand":"Sociedad Deportiva O Salgueiro",
     "nav.tennis":"Tenis","nav.activities":"Actividades","nav.history":"Historia","nav.facilities":"Instalacións","nav.news":"Novas","nav.fees":"Tarifas","nav.contact":"Contacto",
     "hero.tag":"Tenis como actividade principal","hero.title":"O teu club de tenis na Coruña","hero.subtitle":"Benvidos á Sociedade Deportiva O'Salgueiro: club familiar para practicar tenis, pádel e natación nunha contorna natural única.","hero.cta.tennis":"Ver tenis","hero.cta.contact":"Contactar",
     "tennis.title":"Tenis","tennis.facilities.title":"Pistas e instalacións","tennis.facilities.text":"Pistas de tenis con iluminación e vestiarios. Entorno natural e tranquilo para xogar todo o ano.",
@@ -23,7 +23,7 @@ const dict = {
     "sponsor.title":"Patrocinios","sponsor.dep.title":"Deputación da Coruña","sponsor.dep.call":"Convocatoria FO104/2026","sponsor.dep.object":"Obxecto: Substitución da malla perimetral das pistas 1 e 2; tratamento con pintura Galvaproa das 6 torres de iluminación das pistas","sponsor.dep.amount":"Importe concedido: 8.000,00€"
   },
   es: {
-    "site.title":"Club O Salgueiro – Tenis","site.brand":"Sociedad Deportiva O Salgueiro",
+    "site.title":"Sociedad Deportiva O Salgueiro | Tenis, Pádel e Piscina en Paderne (A Coruña)","site.brand":"Sociedad Deportiva O Salgueiro",
     "nav.tennis":"Tenis","nav.activities":"Actividades","nav.history":"Historia","nav.facilities":"Instalaciones","nav.news":"Noticias","nav.fees":"Tarifas","nav.contact":"Contacto",
     "hero.tag":"Tenis como actividad principal","hero.title":"Tu club de tenis en A Coruña","hero.subtitle":"Bienvenidos a la Sociedad Deportiva O'Salgueiro: club familiar para practicar tenis, pádel y natación en un entorno natural único.","hero.cta.tennis":"Ver tenis","hero.cta.contact":"Contactar",
     "tennis.title":"Tenis","tennis.facilities.title":"Pistas e instalaciones","tennis.facilities.text":"Pistas de tenis con iluminación y vestuarios. Entorno natural y tranquilo para jugar todo el año.",
@@ -46,7 +46,7 @@ const dict = {
     "sponsor.title":"Patrocinios","sponsor.dep.title":"Deputación da Coruña","sponsor.dep.call":"Convocatoria FO104/2026","sponsor.dep.object":"Objeto: Sustitución de la malla perimetral de las pistas 1 y 2; tratamiento con pintura Galvaproa de las 6 torres de iluminación de las pistas","sponsor.dep.amount":"Importe concedido: 8.000,00€"
   },
   en: {
-    "site.title":"Club O Salgueiro – Tennis","site.brand":"Sociedad Deportiva O Salgueiro",
+    "site.title":"Sociedad Deportiva O Salgueiro | Tennis, Padel and Swimming Pool in Paderne (A Coruña)","site.brand":"Sociedad Deportiva O Salgueiro",
     "nav.tennis":"Tennis","nav.activities":"Activities","nav.history":"History","nav.facilities":"Facilities","nav.news":"News","nav.fees":"Fees","nav.contact":"Contact",
     "hero.tag":"Tennis as our main activity","hero.title":"Your tennis club in A Coruña","hero.subtitle":"Welcome to Sociedad Deportiva O'Salgueiro: a family-friendly club for tennis, padel and swimming in a unique natural setting.","hero.cta.tennis":"See tennis","hero.cta.contact":"Contact",
     "tennis.title":"Tennis","tennis.facilities.title":"Courts & facilities","tennis.facilities.text":"Tennis courts with lighting and locker rooms. Quiet natural setting to play all year round.",
