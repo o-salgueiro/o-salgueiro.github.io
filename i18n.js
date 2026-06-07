@@ -3,7 +3,7 @@ window.dict = {
   gl: {
     "site.title":"Club de Tenis O Salgueiro | Tenis, Pádel e Piscina en Paderne, preto de Betanzos (A Coruña)","site.brand":"Sociedad Deportiva O Salgueiro",
     "nav.tennis":"Tenis","nav.activities":"Actividades","nav.history":"Historia","nav.facilities":"Instalacións","nav.news":"Novas","nav.fees":"Tarifas","nav.contact":"Contacto",
-    "hero.tag":"Tenis como actividade principal","hero.title":"O teu club de tenis na Coruña","hero.subtitle":"Benvidos á Sociedade Deportiva O'Salgueiro: club familiar para practicar tenis, pádel e natación nunha contorna natural única.","hero.cta.tennis":"Ver tenis","hero.cta.contact":"Contactar",
+    "hero.tag":"Tenis como actividade principal","hero.title":"Club de tenis en Paderne, preto de Betanzos (A Coruña)","hero.subtitle":"Benvidos á Sociedad Deportiva O'Salgueiro, un club familiar en Paderne (A Coruña), cerca de Betanzos, con actividades de tenis, pádel e natación para todas as idades.","hero.cta.tennis":"Ver tenis","hero.cta.contact":"Contactar",
     "tennis.title":"Tenis","tennis.facilities.title":"Pistas e instalacións","tennis.facilities.text":"Pistas de tenis con iluminación e vestiarios. Entorno natural e tranquilo para xogar todo o ano.",
     "activities.title":"Outras actividades","activities.padel.title":"Pádel","activities.padel.text":"Pista de herba sintética con iluminación artificial","activities.pool.title":"Piscina","activities.pool.text":"Piscina ao aire libre en ampla zona verde para a tempada de verán.","activities.social.title":"Actividades sociais","activities.social.text":"Ligas internas de tenis, encontros familiares e eventos do clube.",
     "history.title":"A nosa historia","history.lead1":"A nosa historia",
@@ -25,7 +25,7 @@ window.dict = {
   es: {
     "site.title":"Club de Tenis O Salgueiro | Tenis, Pádel y Piscina en Paderne, cerca de Betanzos (A Coruña)","site.brand":"Sociedad Deportiva O Salgueiro",
     "nav.tennis":"Tenis","nav.activities":"Actividades","nav.history":"Historia","nav.facilities":"Instalaciones","nav.news":"Noticias","nav.fees":"Tarifas","nav.contact":"Contacto",
-    "hero.tag":"Tenis como actividad principal","hero.title":"Tu club de tenis en A Coruña","hero.subtitle":"Bienvenidos a la Sociedad Deportiva O'Salgueiro: club familiar para practicar tenis, pádel y natación en un entorno natural único.","hero.cta.tennis":"Ver tenis","hero.cta.contact":"Contactar",
+    "hero.tag":"Tenis como actividad principal","hero.title":"Club de tenis en Paderne, cerca de Betanzos (A Coruña)","hero.subtitle":"Bienvenidos a la Sociedad Deportiva O'Salgueiro, un club familiar en Paderne (A Coruña), cerca de Betanzos, con actividades de tenis, pádel y natación para todas las edades.","hero.cta.tennis":"Ver tenis","hero.cta.contact":"Contactar",
     "tennis.title":"Tenis","tennis.facilities.title":"Pistas e instalaciones","tennis.facilities.text":"Pistas de tenis con iluminación y vestuarios. Entorno natural y tranquilo para jugar todo el año.",
     "activities.title":"Otras actividades","activities.padel.title":"Pádel","activities.padel.text":"Pista de hierba sintética con iluminación artificial","activities.pool.title":"Piscina","activities.pool.text":"Piscina al aire libre en amplia zona verde para la temporada de verano.","activities.social.title":"Actividades sociales","activities.social.text":"Ligas internas de tenis, encuentros familiares y eventos del club.",
     "history.title":"Nuestra historia","history.lead1":"Nuestra historia",
@@ -48,7 +48,7 @@ window.dict = {
   en: {
     "site.title":"O Salgueiro Tennis Club | Tennis, Padel and Swimming Pool in Paderne, near Betanzos (A Coruna)","site.brand":"Sociedad Deportiva O Salgueiro",
     "nav.tennis":"Tennis","nav.activities":"Activities","nav.history":"History","nav.facilities":"Facilities","nav.news":"News","nav.fees":"Fees","nav.contact":"Contact",
-    "hero.tag":"Tennis as our main activity","hero.title":"Your tennis club in A Coruña","hero.subtitle":"Welcome to Sociedad Deportiva O'Salgueiro: a family-friendly club for tennis, padel and swimming in a unique natural setting.","hero.cta.tennis":"See tennis","hero.cta.contact":"Contact",
+    "hero.tag":"Tennis as our main activity","hero.title":"Tennis club in Paderne, near Betanzos (A Coruña)","hero.subtitle":"Welcome to Sociedad Deportiva O'Salgueiro, a family club in Paderne (A Coruña), near Betanzos, offering tennis, padel, and swimming activities for all ages.","hero.cta.tennis":"See tennis","hero.cta.contact":"Contact",
     "tennis.title":"Tennis","tennis.facilities.title":"Courts & facilities","tennis.facilities.text":"Tennis courts with lighting and locker rooms. Quiet natural setting to play all year round.",
     "activities.title":"Other activities","activities.padel.title":"Padel","activities.padel.text":"Synthetic-grass court with floodlights","activities.pool.title":"Pool","activities.pool.text":"Outdoor pool in a large green area for the summer season.","activities.social.title":"Social events","activities.social.text":"Internal tennis leagues, family gatherings and club events.",
     "history.title":"Our history","history.lead1":"Our history",
