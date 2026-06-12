@@ -45,9 +45,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
     window.scrollTo({top:0,behavior:'instant'});
   }
-  const initial = (location.hash.replace('#','')) || 'inicio';
-  showSection(initial);
-  window.addEventListener('hashchange', ()=>showSection(location.hash.replace('#','')||'inicio'));
+  // const initial = (location.hash.replace('#','')) || 'inicio';
+  // showSection(initial);
+  // window.addEventListener('hashchange', ()=>showSection(location.hash.replace('#','')||'inicio'));
 
   // Hero carousel 5s
   const imgs = Array.from(document.querySelectorAll('#hero-carousel img'));
