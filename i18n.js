@@ -20,7 +20,8 @@ window.dict = {
     "news.title":"Novas","mailto.prompt":"Semella que non hai un cliente de correo predeterminado para \"mailto:\". Quiere abrir Gmail para enviar a mensaxe?",
     "footer.about.title":"Sobre o clube","footer.about.text":"A Sociedade Deportiva O'Salgueiro é un club familiar con instalacións para tenis, pádel e natación, nunha paisaxe de beleza singular e en plena natureza.","footer.links.title":"Ligazóns","footer.legal.title":"Legal","footer.legal.legal":"Aviso Legal","footer.legal.privacy":"Política de Privacidade","footer.legal.cookies":"Política de Cookies",
     "club.title":"Sociedade Deportiva O'Salgueiro","club.p1":"A Sociedade Deportiva O'Salgueiro é un club deportivo de carácter familiar con estupendas instalacións para a práctica do tenis, pádel e natación, actividades que poden realizar persoas de todas as idades e é unha maneira de facer deporte e tamén divertirse.","club.p2":"Sitúase nunha paisaxe de beleza singular e con integración en plena natureza, o que fai que a práctica de deporte sexa máis placenteira.","club.p3":"Vén e coñece o Club da Sociedade Deportiva O'Salgueiro, onde poderás gozar do teu deporte favorito.",
-    "sponsor.title":"Patrocinios","sponsor.dep.title":"Deputación da Coruña","sponsor.dep.call":"Convocatoria FO104/2026","sponsor.dep.object":"Obxecto: Substitución da malla perimetral das pistas 1 e 2; tratamento con pintura Galvaproa das 6 torres de iluminación das pistas","sponsor.dep.amount":"Importe concedido: 8.000,00€"
+    "sponsor.title":"Patrocinios","sponsor.dep.title":"Deputación da Coruña","sponsor.dep.call":"Convocatoria FO104/2026","sponsor.dep.object":"Obxecto: Substitución da malla perimetral das pistas 1 e 2; tratamento con pintura Galvaproa das 6 torres de iluminación das pistas","sponsor.dep.amount":"Importe concedido: 8.000,00€",
+    "gallery.title": "Galería"
   },
   es: {
     "site.title":"Club de Tenis O Salgueiro | Tenis, Pádel y Piscina en Paderne, cerca de Betanzos (A Coruña)","site.brand":"Sociedad Deportiva O Salgueiro",
@@ -43,7 +44,8 @@ window.dict = {
     "mailto.prompt":"Parece que no hay una aplicación de correo predeterminada para \"mailto:\". ¿Quieres abrir Gmail para enviar el mensaje?",
     "footer.about.title":"Sobre el club","footer.about.text":"La Sociedad Deportiva O'Salgueiro es un club familiar con instalaciones para tenis, pádel y natación, en un paisaje de gran belleza y plena naturaleza.","footer.links.title":"Enlaces","footer.legal.title":"Legal","footer.legal.legal":"Aviso Legal","footer.legal.privacy":"Política de Privacidad","footer.legal.cookies":"Política de Cookies",
     "club.title":"Sociedad Deportiva O'Salgueiro","club.p1":"La Sociedad Deportiva O'Salgueiro es un club deportivo de carácter familiar con estupendas instalaciones para la práctica del tenis, pádel y natación, actividades que pueden realizar personas de todas las edades y que son una manera de hacer deporte y también divertirse.","club.p2":"Se sitúa en un paisaje de gran belleza e integrada en plena naturaleza, lo que hace que la práctica del deporte sea más placentera.","club.p3":"Ven y conoce el Club de la Sociedad Deportiva O'Salgueiro, donde podrás disfrutar de tu deporte favorito.",
-    "sponsor.title":"Patrocinios","sponsor.dep.title":"Deputación da Coruña","sponsor.dep.call":"Convocatoria FO104/2026","sponsor.dep.object":"Objeto: Sustitución de la malla perimetral de las pistas 1 y 2; tratamiento con pintura Galvaproa de las 6 torres de iluminación de las pistas","sponsor.dep.amount":"Importe concedido: 8.000,00€"
+    "sponsor.title":"Patrocinios","sponsor.dep.title":"Deputación da Coruña","sponsor.dep.call":"Convocatoria FO104/2026","sponsor.dep.object":"Objeto: Sustitución de la malla perimetral de las pistas 1 y 2; tratamiento con pintura Galvaproa de las 6 torres de iluminación de las pistas","sponsor.dep.amount":"Importe concedido: 8.000,00€",
+    "gallery.title": "Galería"
   },
   en: {
     "site.title":"O Salgueiro Tennis Club | Tennis, Padel and Swimming Pool in Paderne, near Betanzos (A Coruna)","site.brand":"Sociedad Deportiva O Salgueiro",
@@ -66,7 +68,8 @@ window.dict = {
     "mailto.prompt":"It seems there is no default mail app for \"mailto:\". Do you want to open Gmail to send the message?",
     "footer.about.title":"About the club","footer.about.text":"Sociedad Deportiva O'Salgueiro is a family-friendly club with tennis, padel and swimming facilities, set in beautiful natural surroundings.","footer.links.title":"Links","footer.legal.title":"Legal","footer.legal.legal":"Legal Notice","footer.legal.privacy":"Privacy Policy","footer.legal.cookies":"Cookie Policy",
     "club.title":"Sociedad Deportiva O'Salgueiro","club.p1":"Sociedad Deportiva O'Salgueiro is a family-friendly sports club with excellent facilities for tennis, padel and swimming — activities for all ages and a way to keep fit while having fun.","club.p2":"It is set in beautiful surroundings and fully integrated with nature, making sports practice even more enjoyable.","club.p3":"Come and discover the Sociedad Deportiva O'Salgueiro Club, where you can enjoy your favourite sport.",
-    "sponsor.title":"Sponsorship","sponsor.dep.title":"Deputación da Coruña","sponsor.dep.call":"Call FO104/2026","sponsor.dep.object":"Object: Replacement of the perimeter mesh on courts 1 and 2; Galvaproa paint treatment on the 6 court lighting towers.","sponsor.dep.amount":"Amount awarded: 8.000.00€"
+    "sponsor.title":"Sponsorship","sponsor.dep.title":"Deputación da Coruña","sponsor.dep.call":"Call FO104/2026","sponsor.dep.object":"Object: Replacement of the perimeter mesh on courts 1 and 2; Galvaproa paint treatment on the 6 court lighting towers.","sponsor.dep.amount":"Amount awarded: 8.000.00€",
+    "gallery.title": "Gallery"
   }
 };
 
