@@ -47,6 +47,18 @@ footer{background:#0e0f0f;color:#e9f4ef;margin-top:2rem} footer a{color:#e9f4ef}
 /* bloqueo de interacción mientras no se aceptan cookies */
 body[data-cookie="required"]{pointer-events:none}
 body[data-cookie="required"] header, body[data-cookie="required"] .cookie-consent{pointer-events:auto}
+@media (max-width: 900px) {
+header {
+padding-top: env(safe-area-inset-top);
+ }
+nav ul {
+flex-wrap: wrap;
+  }
+.nav {
+height: auto;
+padding: .5rem 0;
+  }
+}
 </style>
 <script>try{if(!localStorage.getItem('lang')) localStorage.setItem('lang','es');}catch(e){}</script>
   <script type="application/ld+json">
