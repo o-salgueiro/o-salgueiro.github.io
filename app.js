@@ -186,6 +186,14 @@ function updateActiveMenu() {
       link.classList.add("active");
     }
   });
+
+  const brand = document.querySelector(".brand");
+
+  if (window.scrollY < 300) {
+    brand.classList.add("active");
+  } else {
+    brand.classList.remove("active");
+  }
 }
 
 window.addEventListener("scroll", updateActiveMenu);
