@@ -187,15 +187,6 @@ function updateActiveMenu() {
     }
   });
 
-  const brand = document.querySelector(".brand");
-
-  const tenisSection = document.querySelector("#tenis");
-
-if (window.scrollY < tenisSection.offsetTop - 150) {
-  brand.classList.add("active");
-} else {
-  brand.classList.remove("active");
-}
 }
 
 window.addEventListener("scroll", updateActiveMenu);
