@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     const subject=encodeURIComponent(`Contacto web – ${name}`);
     const body=encodeURIComponent(`Nome: ${name}\nEmail: ${email}\n\nMensaxe:\n${msg}`);
-    const mail=`mailto:salgueiropaderne@gmail.com?subject=${subject}&body=${body}`;
+    const mail=`mailto:osalgueirosd@gmail.com?subject=${subject}&body=${body}`;
     const a=document.getElementById('mailto-hidden');
     if(a){ a.setAttribute('href', mail); a.click(); }
 
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       const strings=dict[lang]||dict.es;
       const promptTxt=strings['mailto.prompt'] || dict.es['mailto.prompt'];
       if(confirm(promptTxt)){
-        const url=`https://mail.google.com/mail/?view=cm&fs=1&to=salgueiropaderne@gmail.com&su=${subject}&body=${body}`;
+        const url=`https://mail.google.com/mail/?view=cm&fs=1&to=osalgueirosd@gmail.com&su=${subject}&body=${body}`;
         window.open(url, '_blank', 'noopener');
       }
     }, 300);
